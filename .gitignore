@@ -12,6 +12,9 @@ web/.env
 web/.env.*
 !web/.env.example
 
+# Local database dump (keep file locally for re-extraction; not tracked)
+fremcoltd.com.sql
+
 # Logs & debug
 *.log
 npm-debug.log*
@@ -33,3 +36,12 @@ web/.vercel/
 
 # Cursor / local assets
 .cursor/
+
+# Legacy WordPress (removed from project)
+wp-admin/
+wp-content/
+wp-includes/
+wp-*.php
+xmlrpc.php
+readme.html
+.htaccess

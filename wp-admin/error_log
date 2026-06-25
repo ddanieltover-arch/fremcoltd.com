@@ -1,8 +1,0 @@
-[20-Jul-2025 00:46:46 UTC] PHP Warning:  Undefined array key "submit" in /home/wholemel/fremcoltd.com/wp-content/plugins/max-upload-filesize/max-upload-filesize.php on line 39
-[20-Jul-2025 00:46:46 UTC] PHP Warning:  Undefined array key "submit" in /home/wholemel/fremcoltd.com/wp-content/plugins/max-upload-filesize/input.template.php on line 3
-[29-Jul-2025 17:25:03 UTC] PHP Warning:  Attempt to read property "post_content" on null in /home/wholemel/fremcoltd.com/wp-content/plugins/woocommerce/includes/customizer/class-wc-shop-customizer.php on line 949
-[29-Jul-2025 17:25:04 UTC] PHP Warning:  Attempt to read property "post_content" on null in /home/wholemel/fremcoltd.com/wp-content/plugins/woocommerce/includes/customizer/class-wc-shop-customizer.php on line 949
-[24-Sep-2025 10:37:48 UTC] PHP Warning:  Undefined variable $products in /home/wholemel/fremcoltd.com/wp-content/plugins/wp_scraper/admin/wp-scrapper-admin.php on line 293
-[24-Sep-2025 10:42:40 UTC] PHP Warning:  Undefined variable $products in /home/wholemel/fremcoltd.com/wp-content/plugins/wp_scraper/admin/wp-scrapper-admin.php on line 293
-[24-Sep-2025 11:03:14 UTC] PHP Warning:  Undefined variable $products in /home/wholemel/fremcoltd.com/wp-content/plugins/wp_scraper/admin/wp-scrapper-admin.php on line 293
-[16-Mar-2026 09:13:59 UTC] PHP Parse error:  Unmatched '}' in /home/wholemel/fremcoltd.com/wp-content/themes/flatsome-child/functions.php on line 9
