@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { pageThumbnail } from "@/config/assets";
+import { brandAssets } from "@/config/assets";
 
 const openGraphImage = {
-  url: pageThumbnail.src,
-  width: 1200,
-  height: 630,
-  alt: pageThumbnail.alt,
+  url: brandAssets.ogImage,
+  width: brandAssets.ogImageWidth,
+  height: brandAssets.ogImageHeight,
+  alt: brandAssets.logoAlt,
 };
 
 export function createPageMetadata({
@@ -27,7 +27,7 @@ export function createPageMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [pageThumbnail.src],
+      images: [brandAssets.ogImage],
     },
   };
 }

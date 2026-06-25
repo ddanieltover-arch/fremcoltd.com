@@ -137,6 +137,7 @@ export function QuoteForm() {
             <option value="rice">Rice</option>
             <option value="fertilizers">Fertilizers</option>
             <option value="edible-cooking-oil">Edible Cooking Oil</option>
+            <option value="energy-drinks">Energy Drinks</option>
             <option value="other">Other</option>
           </select>
         </Field>

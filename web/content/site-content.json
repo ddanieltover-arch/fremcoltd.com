@@ -9,7 +9,7 @@
   },
   "stats": {
     "pages": 8,
-    "products": 72,
+    "products": 73,
     "posts": 0
   },
   "pages": [
@@ -90,6 +90,11 @@
       "slug": "edible-cooking-oil",
       "name": "Edible Cooking Oil",
       "count": 9
+    },
+    {
+      "slug": "energy-drinks",
+      "name": "Energy Drinks",
+      "count": 1
     }
   ],
   "products": [
@@ -884,6 +889,20 @@
         "edible-cooking-oil"
       ],
       "image": "/images/products/rbd-palm-olein.png"
+    },
+    {
+      "id": 3001,
+      "title": "RedBull Energy Drink (Krating Daeng)",
+      "slug": "redbull-energy-drink-krating-daeng",
+      "excerpt": "Original Krating Daeng Red Bull energy drink in 250 ml cans. Available as single cans or 24-packs for wholesale export.",
+      "description": "Krating Daeng Red Bull is the original energy drink trusted worldwide for decades, delivering a distinctive sweet-citrus taste and a quick, reliable energy boost. Each 250 ml can contains 50 mg caffeine with taurine and B vitamins — ideal for work, study, sports, or any time you need to stay alert and focused.\n\nAvailable for export as single cans or value 24-packs (24 x 250 ml), suited to distributors, retailers, and bulk buyers. Best enjoyed chilled.\n\nPackaging: 250 ml can — single unit or 24-pack\nNutrition (per 250 ml): 115 calories | 50 mg caffeine | 28 g carbohydrates\n\nIngredients: Water, sucrose, glucose, citric acid, taurine, caffeine, inositol, vitamin B complex (niacinamide, calcium pantothenate, pyridoxine hydrochloride, vitamin B12), flavors, caramel color (E150d).",
+      "categories": [
+        "energy-drinks"
+      ],
+      "image": "/images/products/redbull-energy-drink-krating-daeng-gallery-24-pack.png",
+      "gallery": [
+        "/images/products/redbull-energy-drink-krating-daeng-gallery-6-pack.png"
+      ]
     }
   ],
   "testimonials": [

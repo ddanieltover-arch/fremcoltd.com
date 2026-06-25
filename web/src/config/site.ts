@@ -8,6 +8,7 @@ export const navItems = [
       { label: "Rice", href: "/product-category/rice" },
       { label: "Fertilizers", href: "/product-category/fertilizers" },
       { label: "Edible Cooking Oil", href: "/product-category/edible-cooking-oil" },
+      { label: "Energy Drinks", href: "/product-category/energy-drinks" },
     ],
   },
   { label: "About Us", href: "/about-us" },
@@ -38,6 +39,7 @@ export const categorySortOrder = [
   "rice",
   "fertilizers",
   "edible-cooking-oil",
+  "energy-drinks",
 ] as const;
 
 export const categoryMeta: Record<
@@ -67,6 +69,12 @@ export const categoryMeta: Record<
     description:
       "High-quality edible cooking oils for food processing, retail, and export supply chains.",
     image: categoryImages["edible-cooking-oil"],
+  },
+  "energy-drinks": {
+    title: "Energy Drinks",
+    description:
+      "Export-ready energy drink products for wholesale buyers, distributors, and retail supply chains worldwide.",
+    image: categoryImages["energy-drinks"],
   },
 };
 

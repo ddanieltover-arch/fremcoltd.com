@@ -29,6 +29,7 @@ export interface Product {
   description: string;
   categories: string[];
   image?: string;
+  gallery?: string[];
 }
 
 export interface Testimonial {

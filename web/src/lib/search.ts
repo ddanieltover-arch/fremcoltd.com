@@ -1,6 +1,6 @@
 import type { Product } from "@/types/content";
 
-export type SearchCategory = "all" | "sugar" | "rice" | "fertilizers" | "edible-cooking-oil";
+export type SearchCategory = "all" | "sugar" | "rice" | "fertilizers" | "edible-cooking-oil" | "energy-drinks";
 
 const categoryLabels: Record<SearchCategory, string> = {
   all: "All",
@@ -8,6 +8,7 @@ const categoryLabels: Record<SearchCategory, string> = {
   rice: "Rice",
   fertilizers: "Fertilizers",
   "edible-cooking-oil": "Edible Cooking Oil",
+  "energy-drinks": "Energy Drinks",
 };
 
 export const searchCategories = Object.entries(categoryLabels).map(([value, label]) => ({

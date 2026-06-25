@@ -16,6 +16,7 @@ const validCategories = new Set<SearchCategory>([
   "rice",
   "fertilizers",
   "edible-cooking-oil",
+  "energy-drinks",
 ]);
 
 interface Props {

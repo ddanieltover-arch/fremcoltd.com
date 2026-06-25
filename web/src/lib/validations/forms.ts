@@ -12,7 +12,7 @@ export const quoteSchema = z.object({
   name: z.string().min(2, "Name is required"),
   email: z.string().email("Invalid email address"),
   company: z.string().min(2, "Company name is required"),
-  productCategory: z.enum(["sugar", "rice", "fertilizers", "edible-cooking-oil", "other"]),
+  productCategory: z.enum(["sugar", "rice", "fertilizers", "edible-cooking-oil", "energy-drinks", "other"]),
   quantity: z.string().min(1, "Estimated quantity is required"),
   destination: z.string().min(2, "Destination country/port is required"),
   message: z.string().optional(),

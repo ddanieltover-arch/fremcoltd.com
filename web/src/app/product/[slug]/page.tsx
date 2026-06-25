@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ContactForm } from "@/components/forms/SiteForms";
 import { ProductCard } from "@/components/products/ProductCard";
 import { ProductDescription, plainTextExcerpt } from "@/components/products/ProductDescription";
+import { ProductGallery } from "@/components/products/ProductGallery";
 import { categoryMeta } from "@/config/site";
 import { getAllProductSlugs, getProduct, getRelatedProducts } from "@/lib/content";
 import { createPageMetadata } from "@/lib/metadata";
@@ -35,6 +35,10 @@ export default async function ProductPage({ params }: Props) {
   const category = product.categories[0];
   const relatedProducts = category ? getRelatedProducts(product.slug, category, 4) : [];
   const categoryTitle = category ? (categoryMeta[category]?.title ?? category.replace("-", " ")) : "";
+  const galleryImages = [
+    ...(product.image ? [product.image] : []),
+    ...(product.gallery ?? []),
+  ];
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12">
@@ -49,18 +53,9 @@ export default async function ProductPage({ params }: Props) {
       </nav>
 
       <div className="grid gap-10 lg:grid-cols-2">
-        <div className="relative aspect-square overflow-hidden rounded-3xl bg-gradient-to-br from-brand-50 to-brand-100">
-          {product.image && (
-            <Image
-              src={product.image}
-              alt={product.title}
-              fill
-              className="object-cover"
-              sizes="(max-width:1024px) 100vw, 50vw"
-              priority
-            />
-          )}
-        </div>
+        {galleryImages.length > 0 ? (
+          <ProductGallery title={product.title} images={galleryImages} />
+        ) : null}
         <div>
           <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">{category.replace("-", " ")}</p>
           <h1 className="mt-2 text-3xl font-bold text-brand-950 md:text-4xl">{product.title}</h1>

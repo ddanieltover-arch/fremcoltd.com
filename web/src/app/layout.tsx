@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingActions } from "@/components/layout/FloatingActions";
 import { Header } from "@/components/layout/Header";
-import { pageThumbnail } from "@/config/assets";
+import { brandAssets } from "@/config/assets";
 import { getSite } from "@/lib/content";
 import "./globals.css";
 
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   description,
   icons: {
-    icon: [{ url: "/icon.jpg", type: "image/jpeg" }],
-    apple: [{ url: "/apple-icon.jpg", type: "image/jpeg" }],
+    icon: [{ url: "/icon.png", type: "image/png" }],
+    apple: [{ url: "/apple-icon.png", type: "image/png" }],
   },
   openGraph: {
     type: "website",
@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     description: site.tagline,
     images: [
       {
-        url: pageThumbnail.src,
-        width: 1200,
-        height: 630,
-        alt: pageThumbnail.alt,
+        url: brandAssets.ogImage,
+        width: brandAssets.ogImageWidth,
+        height: brandAssets.ogImageHeight,
+        alt: brandAssets.logoAlt,
       },
     ],
   },
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: site.name,
     description: site.tagline,
-    images: [pageThumbnail.src],
+    images: [brandAssets.ogImage],
   },
   robots: { index: true, follow: true },
 };

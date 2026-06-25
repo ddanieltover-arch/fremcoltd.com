@@ -7,6 +7,7 @@ const categoryLabels: Record<QuoteFormData["productCategory"], string> = {
   rice: "Rice",
   fertilizers: "Fertilizers",
   "edible-cooking-oil": "Edible Cooking Oil",
+  "energy-drinks": "Energy Drinks",
   other: "Other",
 };
 

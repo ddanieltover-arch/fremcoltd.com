@@ -6,8 +6,10 @@ export const pageThumbnail = {
 export const brandAssets = {
   logo: "/images/brand/logo.png",
   logoAlt: "FREEM ENTERPRISE CO., LTD",
-  icon: "/images/brand/icon.jpeg",
-  ogImage: pageThumbnail.src,
+  icon: "/images/brand/icon.png",
+  ogImage: "/og-image.png",
+  ogImageWidth: 1080,
+  ogImageHeight: 438,
   aboutBanner: pageThumbnail.src,
   sugarFactory: "/images/brand/sugar-factory.webp",
 } as const;
@@ -91,4 +93,5 @@ export const categoryImages: Record<string, string> = {
   rice: "/images/categories/rice.jpg",
   fertilizers: "/images/categories/fertilizers.jpg",
   "edible-cooking-oil": "/images/categories/edible-cooking-oil.png",
+  "energy-drinks": "/images/categories/energy-drinks.png",
 };

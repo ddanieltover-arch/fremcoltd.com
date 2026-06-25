@@ -10,15 +10,11 @@ const webRoot = path.join(root, "web");
 const brandDir = path.join(webRoot, "public", "images", "brand");
 const heroDir = path.join(webRoot, "public", "images", "hero");
 const categoryDir = path.join(webRoot, "public", "images", "categories");
-const appDir = path.join(webRoot, "src", "app");
 const baseUrl = "https://fremcoltd.com/wp-content/uploads";
 
 const assets = [
   { url: `${baseUrl}/2025/06/logo.png`, dest: path.join(brandDir, "logo.png") },
-  { url: `${baseUrl}/2025/06/cropped-logo.jpeg`, dest: path.join(brandDir, "icon.jpeg") },
-  { url: `${baseUrl}/2025/06/cropped-logo.jpeg`, dest: path.join(appDir, "icon.jpg") },
-  { url: `${baseUrl}/2025/06/cropped-logo.jpeg`, dest: path.join(appDir, "apple-icon.jpg") },
-  { url: `${baseUrl}/2025/07/1-1024x427.png`, dest: path.join(webRoot, "public", "og-image.png") },
+  { url: `${baseUrl}/2025/06/logo.png`, dest: path.join(webRoot, "public", "og-image.png") },
   { url: `${baseUrl}/2025/07/1.png`, dest: path.join(heroDir, "slide-fertilizers-1.png") },
   { url: `${baseUrl}/2025/07/2.png`, dest: path.join(heroDir, "slide-fertilizers-2.png") },
   { url: `${baseUrl}/2025/07/3.png`, dest: path.join(heroDir, "slide-fertilizers-3.png") },

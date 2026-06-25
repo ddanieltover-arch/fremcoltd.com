@@ -14,6 +14,7 @@ const categoryGradients: Record<string, string> = {
   rice: "from-emerald-100 to-emerald-50",
   fertilizers: "from-lime-100 to-lime-50",
   "edible-cooking-oil": "from-yellow-100 to-yellow-50",
+  "energy-drinks": "from-sky-100 to-sky-50",
 };
 
 export function ProductCard({ product, className }: ProductCardProps) {
