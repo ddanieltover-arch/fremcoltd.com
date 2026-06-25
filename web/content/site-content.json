@@ -1,0 +1,911 @@
+{
+  "site": {
+    "name": "FREEM ENTERPRISE CO., LTD",
+    "tagline": "Sweetening the World with Thai Excellence",
+    "url": "https://fremcoltd.com",
+    "phone": "(+66) 80 854 5975",
+    "whatsapp": "+66808545975",
+    "email": "sales@fremcoltd.com"
+  },
+  "stats": {
+    "pages": 8,
+    "products": 72,
+    "posts": 0
+  },
+  "pages": [
+    {
+      "id": 68,
+      "title": "Products",
+      "slug": "products",
+      "excerpt": "",
+      "parent": 0
+    },
+    {
+      "id": 547,
+      "title": "Contact",
+      "slug": "contact",
+      "excerpt": "[ux_slider bg_color=\\\"rgb(255,255,255)\\\" hide_nav=\\\"true\\\" nav_pos=\\\"outside\\\" nav_style=\\\"simple\\\" bullets=\\\"false\\\" timer=\\\"3000\\\" pause_hover=\\\"false\\\"]\n\n[section label=\\\"Slide 1\\\" bg=\\\"1119\\\" bg_size=\\\"original\\\" bg_overlay=\\\"rgba(0, 0, 0, 0.768)\\\" bg_pos=\\\"32% 65%\\\" height=\\\"480px\\\" border=\\\"0px 0px 0px 0px\\\" border_color=\\\"rgb(111, 166, 212)\\\"]\n\n[row]\n\n[col span=\\\"5\\\" span__sm=\\\"12\\\" span__m",
+      "parent": 0
+    },
+    {
+      "id": 621,
+      "title": "About Us",
+      "slug": "about-us",
+      "excerpt": "[section label=\\\"Banner Image\\\" bg=\\\"1221\\\" bg_size=\\\"original\\\" bg_pos=\\\"59% 90%\\\" height=\\\"325px\\\" height__sm=\\\"250px\\\"]\n\n[/section]\n[section label=\\\"About Text\\\"]\n\n[gap height=\\\"40px\\\" height__sm=\\\"20px\\\"]\n\n[row v_align=\\\"middle\\\" h_align=\\\"center\\\"]\n\n[col span=\\\"4\\\" span__sm=\\\"12\\\" span__md=\\\"4\\\" margin__sm=\\\"0px 0px -20px 0px\\\"]\n\n[gap height=\\\"10px\\\" visibility=\\\"hide-for-medium\\\"]\n\n[ux_text ",
+      "parent": 0
+    },
+    {
+      "id": 838,
+      "title": "Home",
+      "slug": "home",
+      "excerpt": "[ux_slider type=\\\"fade\\\" nav_size=\\\"normal\\\" timer=\\\"10000\\\"]\n\n[ux_image id=\\\"2550\\\" image_size=\\\"original\\\" image_hover=\\\"zoom\\\" link=\\\"https://fremcoltd.com/product-category/fertilizers/\\\"]\n\n[ux_image id=\\\"2549\\\" image_size=\\\"original\\\" image_hover=\\\"zoom\\\" link=\\\"https://fremcoltd.com/product-category/fertilizers/\\\"]\n\n[ux_image id=\\\"2548\\\" image_size=\\\"original\\\" image_hover=\\\"zoom\\\" link=\\\"htt",
+      "parent": 0
+    },
+    {
+      "id": 1778,
+      "title": "Ordering Procedure",
+      "slug": "ordering-procedure",
+      "excerpt": "[row label=\\\"Icon Boxes\\\" style=\\\"collapse\\\" width=\\\"full-width\\\" v_align=\\\"middle\\\" h_align=\\\"center\\\"]\n\n[col span__sm=\\\"12\\\" span__md=\\\"12\\\" align=\\\"center\\\"]\n\n[section bg_color=\\\"rgb(255,255,255)\\\" padding=\\\"140px\\\" padding__sm=\\\"70px\\\"]\n\n[row_inner h_align=\\\"center\\\"]\n\n[col_inner span=\\\"10\\\" span__sm=\\\"12\\\" padding=\\\"0px 0px 0px 0px\\\" margin=\\\"0px 0px 0px 0px\\\" align=\\\"center\\\"]\n\n[featured_box",
+      "parent": 0
+    },
+    {
+      "id": 1807,
+      "title": "Quality Control",
+      "slug": "quality-control",
+      "excerpt": "[row label=\\\"Icon Boxes\\\" style=\\\"collapse\\\" width=\\\"full-width\\\" v_align=\\\"middle\\\" h_align=\\\"center\\\"]\n\n[col span__sm=\\\"12\\\" span__md=\\\"12\\\" align=\\\"center\\\"]\n\n[section bg_color=\\\"rgb(255,255,255)\\\" dark=\\\"true\\\" padding=\\\"140px\\\" padding__sm=\\\"70px\\\"]\n\n[row_inner h_align=\\\"center\\\"]\n\n[col_inner span=\\\"10\\\" span__sm=\\\"12\\\" padding=\\\"0px 0px 0px 0px\\\" margin=\\\"0px 0px 0px 0px\\\" align=\\\"center\\\"]\n",
+      "parent": 0
+    },
+    {
+      "id": 2328,
+      "title": "Privacy Policy",
+      "slug": "privacy-policy",
+      "excerpt": "[row label=\\\"Icon Boxes\\\" style=\\\"collapse\\\" width=\\\"full-width\\\" v_align=\\\"middle\\\" h_align=\\\"center\\\"]\n\n[col span__sm=\\\"12\\\" span__md=\\\"12\\\" align=\\\"center\\\"]\n\n[section bg_color=\\\"rgb(255,255,255)\\\" dark=\\\"true\\\" padding=\\\"140px\\\" padding__sm=\\\"70px\\\"]\n\n[row_inner style=\\\"small\\\" col_bg=\\\"rgb(255,255,255)\\\" h_align=\\\"center\\\"]\n\n[col_inner span=\\\"10\\\" span__sm=\\\"12\\\" padding=\\\"0px 0px 0px 0px\\\" m",
+      "parent": 0
+    },
+    {
+      "id": 2331,
+      "title": "Sustainability",
+      "slug": "sustainability",
+      "excerpt": "[row label=\\\"Icon Boxes\\\" style=\\\"collapse\\\" width=\\\"full-width\\\" v_align=\\\"middle\\\" h_align=\\\"center\\\"]\n\n[col span__sm=\\\"12\\\" span__md=\\\"12\\\" align=\\\"center\\\"]\n\n[section bg_color=\\\"rgb(255,255,255)\\\" padding=\\\"140px\\\" padding__sm=\\\"70px\\\"]\n\n[row_inner h_align=\\\"center\\\"]\n\n[col_inner span=\\\"10\\\" span__sm=\\\"12\\\" padding=\\\"0px 0px 0px 0px\\\" margin=\\\"0px 0px 0px 0px\\\" align=\\\"center\\\"]\n\n[featured_box",
+      "parent": 0
+    }
+  ],
+  "categories": [
+    {
+      "slug": "sugar",
+      "name": "Sugar",
+      "count": 10
+    },
+    {
+      "slug": "rice",
+      "name": "Rice",
+      "count": 22
+    },
+    {
+      "slug": "fertilizers",
+      "name": "Fertilizers",
+      "count": 31
+    },
+    {
+      "slug": "edible-cooking-oil",
+      "name": "Edible Cooking Oil",
+      "count": 9
+    }
+  ],
+  "products": [
+    {
+      "id": 427,
+      "title": "ICUMSA 100 CANE SUGAR",
+      "slug": "icumsa-100-cane-sugar",
+      "excerpt": "",
+      "description": "ICUMSA 100 Cane Sugar from FREEM ENTERPRISE CO., LTD Exporters is a high-purity sugar sourced from Thailand. Perfect for beverages, confectionery, and more, it offers exceptional clarity and flavor enhancement, ensuring top-quality culinary results.\n\nExceptional Purity : ICUMSA 100 Cane Sugar is known for its exceptional purity and quality. Sourced from the lush, sun-kissed fields of Thailand, our sugar undergoes a meticulous refining process that removes impurities and ensures a crystal-clear, high-purity product. The result is a sugar that not only enhances the sweetness but also the overall quality of any culinary creation.\n\nRefining Process : Our refining process is a blend of traditional methods and modern technology. It begins with the careful selection of premium sugarcane, harvested at peak ripeness to ensure maximum sweetness and flavor. The sugarcane is then processed using advanced techniques that preserve its natural goodness while achieving the high purity standards required for ICUMSA 100 classification.\n\nVersatile Ingredient : ICUMSA 100 Cane Sugar is a versatile ingredient suitable for a wide range of applications. Its fine, white crystals dissolve easily, making it",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/icumsa-100-cane-sugar.jpg"
+    },
+    {
+      "id": 1440,
+      "title": "ICUMSA-45 WHITE REFINED SUGAR",
+      "slug": "icumsa-45-white-refined-sugar",
+      "excerpt": "",
+      "description": "ICUMSA 45 White Refined Sugar from FREEM ENTERPRISE CO., LTD Exporters is a premium sugar variant characterized by its pure white color and fine granules. Ideal for a wide range of culinary uses, including beverages, baking, and confectionery, it guarantees excellent sweetness and quality in every application.\n\nExceptional Purity : ICUMSA 100 Cane Sugar is known for its exceptional purity and quality. Sourced from the lush, sun-kissed fields of Thailand, our sugar undergoes a meticulous refining process that removes impurities and ensures a crystal-clear, high-purity product. The result is a sugar that not only enhances the sweetness but also the overall quality of any culinary creation.\n\nRefining Process : Our refining process is a blend of traditional methods and modern technology. It begins with the careful selection of premium sugarcane, harvested at peak ripeness to ensure maximum sweetness and flavor. The sugarcane is then processed using advanced techniques that preserve its natural goodness while achieving the high purity standards required for ICUMSA 100 classification.\n\nVersatile Ingredient : ICUMSA 100 Cane Sugar is a versatile ingredient suitable for a wide range of app",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/icumsa-45-white-refined-sugar.jpg"
+    },
+    {
+      "id": 1448,
+      "title": "Raw Brown Cane Sugar Grade E ICUMSA 600-1200",
+      "slug": "raw-brown-cane-sugar-grade-e-icumsa-600-1200",
+      "excerpt": "",
+      "description": "Rich Brown Color and Distinctive Flavor : ICUMSA 600-1200 Brown Cane Sugar is characterized by its rich brown color and robust flavor profile, derived from Thailand's sun-drenched cane fields. This sugar undergoes minimal processing, retaining more of the natural molasses content, which gives it its unique taste and color.\n\nProduction Process : Our production process focuses on preserving the natural attributes of sugarcane. The cane is carefully harvested at optimal maturity to capture maximum sweetness and flavor. Minimal refining ensures that ICUMSA 600-1200 Brown Cane Sugar maintains its natural richness and nutritional benefits.\n\nVersatility in Culinary Applications : Ideal for both sweet and savory dishes, ICUMSA 600-1200 Brown Cane Sugar adds depth and complexity to recipes. Its coarse texture and caramel-like taste make it perfect for use in baking, marinades, sauces, and beverages, providing a distinct flavor profile that enhances culinary creations.\n\nWholesale Supply Excellence : As leading wholesale suppliers, we prioritize efficiency and reliability in our supply chain. We ensure prompt delivery of bulk orders to distributors, retailers, and industries seeking high-qual",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/raw-brown-cane-sugar-grade-e-icumsa-600-1200.jpg"
+    },
+    {
+      "id": 1451,
+      "title": "ICUMSA 150 CANE SUGAR",
+      "slug": "icumsa-150-cane-sugar",
+      "excerpt": "",
+      "description": "ICUMSA 150 Cane Sugar from FREEM ENTERPRISE CO., LTD Exporters is prized for its premium quality and versatility. Sourced from Thailand, it undergoes meticulous processing to ensure optimal sweetness and purity, making it ideal for beverages, baking, confectionery, and savory dishes. With reliable supply and a global reach, it meets the needs of distributors, retailers, and industries worldwide, promising superior taste and quality in every application.\n\nPremium Quality and Versatility : ICUMSA 150 Cane Sugar from FREEM ENTERPRISE CO., LTD Exporters is renowned for its high quality and versatility. Sourced from Thailand's fertile fields, this sugar undergoes precise processing to ensure optimal sweetness and purity, making it ideal for various culinary uses.\n\nCulinary Applications : With its fine texture and excellent solubility, ICUMSA 150 Cane Sugar is perfect for use in beverages, baking, confectionery, and savory dishes. It enhances flavors and provides consistent sweetness, catering to the diverse needs of chefs and food manufacturers worldwide.\n\nReliable Supply and Global Reach : As leading wholesale suppliers, we ensure efficient supply chain management to deliver bulk order",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/icumsa-150-cane-sugar.jpg"
+    },
+    {
+      "id": 1460,
+      "title": "VHP SUGAR",
+      "slug": "vhp-sugar",
+      "excerpt": "",
+      "description": "VHP (Very High Polarization) Sugar from FREEM ENTERPRISE CO., LTD Exporters is a premium sugar known for its high purity and exceptional sweetness. Derived from Thailand's fertile sugarcane fields, VHP Sugar undergoes a specialized refining process to achieve its distinctive characteristics.\n\nCharacteristics:\n\nVHP Sugar is characterized by its very high polarization, indicating a high sucrose content and superior sweetness. It is finely granulated and dissolves easily, making it suitable for a wide range of culinary applications.\n\nVersatility:\n\nIdeal for use in beverages, confectionery, baking, and more, VHP Sugar enhances the flavor and texture of dishes while ensuring consistent sweetness. Its versatility makes it a favorite among chefs and food manufacturers globally.\n\nSupply Excellence:\n\nAs leading wholesale suppliers, we ensure efficient supply chain management to deliver VHP Sugar promptly and reliably. Our global export network ensures that this premium sugar reaches markets worldwide, meeting the demands of various industries.\n\nQuality Assurance:\n\nQuality is our priority. VHP Sugar undergoes rigorous testing and quality control measures throughout the production process, en",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/vhp-sugar.jpg"
+    },
+    {
+      "id": 1465,
+      "title": "BEET SUGAR",
+      "slug": "beet-sugar",
+      "excerpt": "",
+      "description": "Beet Sugar from FREEM ENTERPRISE CO., LTD Exporters is a high-quality sugar product derived from sugar beets cultivated under optimal conditions. Known for its natural sweetness and purity, beet sugar undergoes a meticulous refining process to ensure superior quality and taste.\n\nCharacteristics:\n\nBeet sugar is characterized by its fine texture and white color, similar to cane sugar. It offers a clean, neutral taste profile, making it suitable for a wide range of culinary applications, from beverages and baking to confectionery and savory dishes.\n\nVersatility:\n\nWith its versatile nature, beet sugar integrates seamlessly into various recipes, enhancing flavors while providing consistent sweetness. It is a preferred choice among chefs and food manufacturers for its reliable performance and ability to complement diverse ingredients.\n\nSupply Excellence:\n\nAs leading wholesale suppliers, we prioritize efficiency and reliability in supplying beet sugar to distributors, retailers, and industries worldwide. Our robust supply chain and global distribution network ensure prompt delivery and consistent availability.\n\nQuality Assurance:\n\nQuality is paramount in our production process. Beet sugar",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/beet-sugar.jpg"
+    },
+    {
+      "id": 2044,
+      "title": "PRIVI 100% Water Soluble Fertilizer",
+      "slug": "privi-000050-17-5-s-water-soluble-fertilizer",
+      "excerpt": "Privi 00:00:50 + 17.5 S is a fully water-soluble NPK fertilizer enriched with sulphur, designed to provide balanced potassium and sulphur nutrition during critical growth stages of crops.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/privi-000050-17-5-s-water-soluble-fertilizer.webp"
+    },
+    {
+      "id": 2046,
+      "title": "EBS Fulvic Acid Fulvic Acid 50% Organic Fertilizer",
+      "slug": "ebs-fulvic-acid-fulvic-acid-50-organic-fertilizer",
+      "excerpt": "Buy EBS Fulvic Acid Fulvic Acid 50% Organic Fertilizer improves root growth, increases nutrient absorption, and enhances plant immunity. suitable for soil application and fertigation in all crops. available at the best price in Agribegri",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/ebs-fulvic-acid-fulvic-acid-50-organic-fertilizer.webp"
+    },
+    {
+      "id": 2048,
+      "title": "EBS Amino Acids 80% Plant Growth Enhancer",
+      "slug": "ebs-amino-acids-80-plant-growth-enhancer",
+      "excerpt": "Buy EBS Amino Acids 80% Plant Growth Enhancer improves plant stress resistance, boosts chlorophyll levels, and enhances nutrient absorption. It strengthens growth, improves fruit quality. suitable for all crops, available at the best price in Agribegri",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/ebs-amino-acids-80-plant-growth-enhancer.webp"
+    },
+    {
+      "id": 2051,
+      "title": "Thai Long Grain Rice",
+      "slug": "thai-long-grain-rice",
+      "excerpt": "Specifications:\nType: Rice\nTexture: Soft\nKind: White Rice\nVariety: Long-Grain Rice\nStyle: Dried\nCultivation Type: Common\nColor: White\nBroken Ratio (%): 25 %\nMax. Moisture (%): 14 %\nAdmixture (%): 11 %\nCrop Year: 2013-2014",
+      "description": "Technical Specifications:\n\nVariety: Thai Long Grain Rice (Oryza sativa)\n\nGrain Type: Extra-long, slender grains\n\nProcessing: Milled and polished to perfection\n\nColor: Translucent, white grains\n\nMoisture Content: Less than 14%\n\nBroken Grains: Less than 5%\n\nForeign Matter: None\n\nIndulge in the culinary excellence of Thailand with our premium Long Grain Rice, meticulously cultivated and harvested in the lush, fertile fields of Thailand. As a leading producer and exporter, we take immense pride in delivering the finest quality rice grains that embody the essence of Thai cuisine.\n\nOur Long Grain Rice is renowned for its delicate aroma, superior taste, and elongated grains that cook up perfectly fluffy. Whether it's a traditional Thai dish or an international culinary creation, our rice's versatility makes it an ideal choice. Packed with essential nutrients, vitamins, and minerals, it offers a healthy addition to your meals.\n\nPackaging:\n\nTo ensure the utmost freshness and quality, our Premium Thai Long Grain Rice is available in various packaging options:\n\nStandard Packaging Sizes: 1kg, 5kg, 10kg, and 20kg\n\nMaterial: High-quality, durable packaging designed to preserve freshness and prev",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-long-grain-rice.webp"
+    },
+    {
+      "id": 2052,
+      "title": "Thai Parboiled Rice",
+      "slug": "thai-parboiled-rice",
+      "excerpt": "Technical Data:\n\nVariety: Thai Parboiled Rice (Oryza sativa)\n\nGrain Type: Medium to long grains\n\nProcessing: Parboiled to retain nutrients and enhance grain firmness\n\nColor: Translucent golden grains post-parboiling\n\nMoisture Content: Below 14%\n\nBroken Grains: Less than 5%\n\nForeign Matter: Nil",
+      "description": "Packaging:\n\nOur Premium Thai Parboiled Rice is available in various packaging options designed to maintain freshness and quality:\n\nPackaging Sizes: 1kg, 5kg, 10kg, and 25kg\n\nMaterial: High-quality, durable packaging that preserves the rice's freshness and nutritional value.\n\nCustomization: Options for private labeling and customized packaging for bulk orders are available upon request.\n\nStorage Instructions: Store in a cool, dry place away from direct sunlight.\n\nPremium Thai Parboiled Rice - Exemplary Quality Straight from Thailand's Fields\n\nSavor the exceptional quality and nutritional benefits of our Premium Thai Parboiled Rice, meticulously harvested from the verdant fields of Thailand. As a leading producer and exporter, we take immense pride in delivering rice that exceeds expectations, embodying the rich heritage and culinary essence of Thailand.\n\nFeatures:\n\nExceptional Quality Grains:\n\nUnique Parboiling Process: Our rice undergoes a special parboiling technique that preserves nutrients, resulting in grains that are firmer, less sticky, and with a golden hue.\n\nDistinctive Flavor: A nutty, slightly earthy taste that complements a wide range of dishes.\n\nNutrient-Rich and Health",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-parboiled-rice.webp"
+    },
+    {
+      "id": 2053,
+      "title": "Jasmine Rice (Thai Hom Mali)",
+      "slug": "jasmine-rice-thai-hom-mali",
+      "excerpt": "Specifications of Thai Hom Mali Rice\n\n&nbsp;\n\nPurity : 92%\n\nWhole Kernels: 60% Max\n\nVariety: Long Grain Rice\n\nBroken (5.2 mm.): 4.5% Max\n\nMoisture: 14% Max\n\nAdmixture: 2% Max\n\nRed kernels : 0%\n\nYellow kernels: 0.2% Max\n\nChalky kernels: 6% Max\n\nCrop Year : 2012-2013\n\nWhite Glutinous Rice : 1.5% Max\n\n",
+      "description": "Fragrant Thai Hom Mali Jasmine Rice - Aromatic Excellence from Thailand\n\nElevate your culinary experience with our premium Thai Hom Mali Jasmine Rice, an embodiment of fragrance and quality cultivated in the sun-kissed fields of Thailand. As pioneers in producing and exporting this exquisite grain, we take pride in delivering the epitome of aromatic perfection to kitchens worldwide.\n\nPackaging:\n\nPackaging Sizes: Available in 1kg, 5kg, 10kg, and 20kg variants.\n\nMaterial: Premium, airtight packaging that preserves the rice's aroma and freshness.\n\nCustomization: Options for personalized packaging and branding for bulk orders.\n\nStorage Instructions: Store in a cool, dry place away from direct sunlight to retain fragrance and quality.\n\nCertifications and Compliance:\n\nOur Thai Hom Mali Jasmine Rice meets stringent international food safety standards, certified by ISO, HACCP, and regulatory bodies.\n\nComplies with the Thai Agricultural Standards (TAS) and other relevant quality control measures.\n\nSavor the Essence of Thailand:\n\nImmerse yourself in the essence of Thai cuisine with our fragrant Thai Hom Mali Jasmine Rice. From traditional recipes to innovative culinary creations, let every m",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/jasmine-rice-thai-hom-mali.jpg"
+    },
+    {
+      "id": 2054,
+      "title": "Japonica Rice",
+      "slug": "japonica-rice",
+      "excerpt": "Technical Specifications:\n\nVariety: Japonica Rice (Oryza sativa japonica)\n\nGrain Type: Short to medium-grain with a slightly plump appearance\n\nProcessing: Milled and polished to maintain inherent qualities\n\nColor: Opalescent white grains with a glossy sheen\n\nCooking Texture: Sticky and firm upon coo",
+      "description": "Features:\n\nQuality Assurance in Every Grain:\n\nSticky Consistency: Known for its cohesive texture, ideal for traditional Japanese cuisine.\n\nDistinct Texture: Offers a satisfying chewiness, perfect for various culinary applications.\n\nNatural Flavor Profile:\n\nSubtle Sweetness: Adds a nuanced sweetness that enhances diverse dishes.\n\nFlavor Retention: Absorbs and enhances accompanying flavors, enriching meals.\n\nVersatile Wholesale Supply:\n\nIdeal for sushi, onigiri, and a wide array of Japanese-inspired dishes.\n\nAdds a unique texture and taste to international recipes, perfect for diverse cuisines.\n\nAs a wholesale exporter of premium Japonica Rice, we proudly offer a distinguished variety revered for its exceptional quality and genuine Japanese heritage. Our commitment to delivering superior grains extends to businesses seeking authentic Japanese rice, ensuring consistent excellence in every shipment.\n\nBulk Packaging and Logistics:\n\nQuantity Options:  Available in bulk quantities suitable for wholesalers and distributors.\n\nPackaging:  Customizable bulk packaging ensuring product integrity during transit.\n\nShipping Expertise:  Timely delivery with adherence to international shipping stand",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/japonica-rice.png"
+    },
+    {
+      "id": 2055,
+      "title": "1121 Sella Basmati Rice",
+      "slug": "1121-sella-basmati-rice",
+      "excerpt": "Benefits and Culinary Prestige:\n\nLong-Grain Marvel: The elongated grains make it an ideal choice for a myriad of culinary delights, ranging from aromatic biryanis to flavorful pilafs, imparting an exceptional visual and gastronomic experience.\n\nAromatic Symphony: Infuses a tantalizing aroma into dis",
+      "description": "Technical Specifications:\n\nVariety: 1121 Sella Basmati Rice, a revered variant known for its superior quality.\n\nGrain Length: Impressive grains measuring between 8.2mm to 8.4mm, ensuring an extraordinary culinary experience.\n\nAroma: An unmistakable and captivating aroma inherent to Basmati rice, adding depth to every dish.\n\nTexture: Each grain embodies a delicate, non-sticky texture post-cooking, contributing to the rice's gourmet appeal.\n\nCultivation Practices: Cultivated in meticulously tended fields, employing a harmonious blend of age-old agricultural wisdom and innovative practices to nurture each grain to perfection.\n\nProcessing Excellence: Carefully processed and curated to retain the rice's innate qualities, preserving its natural essence and nutritional richness.\n\nPurity Assurance: Rigorous quality control measures ensure the rice is free from impurities, stones, and foreign matter.\n\nPackaging: Thoughtfully packaged in various sizes, prioritizing freshness and safeguarding quality throughout transportation.\n\nOptimal Moisture Levels: Maintained at ideal levels to uphold the rice's integrity, ensuring prolonged shelf life.\n\nWe are a distinguished cultivator and exporter dedi",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/1121-sella-basmati-rice.webp"
+    },
+    {
+      "id": 2056,
+      "title": "Quality Brown Rice",
+      "slug": "quality-brown-rice",
+      "excerpt": "Chemical Specifications:\n\nMoisture Content: Not exceeding 14%\n\nTotal Ash: Max 2.0%\n\nBroken Grains: Max 5%\n\nForeign Matter: Max 0.5%\n\nChalky Grains: Max 3%\n\nAverage Grain Length: 6.00 to 6.50 mm\n\nMill Degree: Well milled and polished",
+      "description": "Packaging Options:\n\nBulk Packaging: Ideal for larger quantities, our Brown Rice is available in bulk packaging options ranging from 25 kg to 50 kg sacks. These sacks are sturdy, designed to withstand transportation and storage, ensuring the rice's integrity.\n\nRetail Packaging: For consumer convenience, we offer retail-sized packaging in various options:\n\n1 kg and 5 kg Bags: These smaller packs cater to household needs, maintaining freshness and ease of handling.\n\nVacuum-Sealed Pouches: Ensures maximum freshness by sealing in the natural goodness and nutrients of Brown Rice. Available in various sizes suitable for different market preferences.\n\nExport Packaging Standards:\n\nOur export packaging adheres to international standards and regulations, meeting the requirements for safe and efficient transportation across borders.\n\nCustomized packaging and labeling can be tailored to comply with specific import regulations and market preferences of various countries.\n\nDiscover our premium Brown Rice for sale, a nutritious whole grain choice with a delightful nutty flavor and chewy texture. Packed with fiber, essential nutrients, and antioxidants, it's a wholesome addition to a healthy diet.\n",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/quality-brown-rice.jpg"
+    },
+    {
+      "id": 2057,
+      "title": "Thai Glutinous Rice",
+      "slug": "thai-glutinous-rice",
+      "excerpt": "Characteristics:\n\nVariety: Glutinous Rice (Oryza sativa var. glutinosa)\n\nTexture: The hallmark of glutinous rice is its sticky, chewy texture when cooked, making it perfect for dishes where a cohesive, binding quality is desired.\n\nGrain Size: Short to medium grains with a plump, round shape, and a c",
+      "description": "Glutinous rice, despite its name, is free of gluten. It’s a distinct variety known for its sticky, chewy texture when cooked, making it a culinary gem in many Asian cuisines. Its naturally sweet flavor and cohesive texture set it apart from other rice varieties. Our glutinous rice is meticulously cultivated and processed to ensure the highest quality, offering a delightful experience to culinary enthusiasts and chefs alike.\n\nPackaging Options:\n\nBulk Packaging: Available in bulk quantities ranging from 25 kg to 50 kg sacks, designed for commercial use and large-scale culinary operations.\n\nRetail Packaging: Consumer-friendly options include smaller packs, such as 1 kg or 5 kg bags, catering to household needs.\n\nCustom Packaging: Tailored packaging solutions based on client specifications, including private labeling and customized bag sizes.\n\nExport Readiness:\n\nOur glutinous rice adheres to international quality standards, making it an excellent choice for export markets.\n\nPackaging and labeling can be customized to comply with specific import regulations and market preferences of various countries.\n\nThai Glutinous Rice is often used in classic Thai recipes such as mango sticky rice, ",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-glutinous-rice.webp"
+    },
+    {
+      "id": 2058,
+      "title": "Arborio Rice",
+      "slug": "arborio-rice",
+      "excerpt": "Chemical Specifications:\n\nMoisture Content: Maintained within optimal levels, typically not exceeding 14%, ensuring freshness and quality preservation.\n\nPurity: Rigorous quality checks to ensure superior quality, free from impurities and foreign matter.\n\nUniformity: Consistent grain size and appeara",
+      "description": "Characteristics:\n\nVariety: Arborio Rice (Oryza sativa var. Arborio)\n\nGrain Size: Medium to short grains with a plump, rounded shape and a distinct pearly appearance.\n\nTexture: Known for its unique ability to absorb liquids while retaining a firm exterior, resulting in a creamy, tender interior upon cooking.\n\nCooking Qualities: Renowned for creating creamy and sumptuous risotto dishes by releasing starch while absorbing flavors.\n\nVersatility: Beyond risotto, it's a versatile ingredient suitable for various gourmet dishes, enhancing texture and taste profiles.\n\nAs a leading wholesaler of premium culinary ingredients, we take pride in offering Arborio rice, an esteemed staple in Italian cuisine revered for its exceptional quality and versatility. Sourced from renowned producers, our Arborio rice is the epitome of excellence, designed to elevate culinary experiences and cater to the demands of esteemed chefs and food establishments.\n\nPackaging Options:\n\nBulk Packaging: Available in bulk quantities tailored for wholesale, in 25 kg to 50 kg sacks, ideal for restaurants, hotels, and culinary institutions.\n\nCustomization: Tailored packaging solutions are available based on client requireme",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/arborio-rice.webp"
+    },
+    {
+      "id": 2090,
+      "title": "Vanproz Growth Enhancer Organic Fertilizer | AgriBegri",
+      "slug": "vanproz-growth-enhancer-organic-fertilizer-agribegri",
+      "excerpt": "Shop For Vanproz Super Potassium Humate (98%) Organic Fertilizer Online From AgriBegri With Free Nationwide Delivery Service.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/vanproz-growth-enhancer-organic-fertilizer-agribegri.webp"
+    },
+    {
+      "id": 2093,
+      "title": "EBS Zinc EDTA Zn 12% Chelated Micronutrient Fertilizer",
+      "slug": "ebs-zinc-edta-zn-12-chelated-micronutrient-fertilizer",
+      "excerpt": "Buy EBS Zinc EDTA Zn 12% Chelated Micronutrient Fertilizer It improves chlorophyll production, enhances plant growth, and corrects zinc deficiency in crops, Highly water-soluble and suitable for all soil types. available at the best price in Agribegri",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/ebs-zinc-edta-zn-12-chelated-micronutrient-fertilizer.webp"
+    },
+    {
+      "id": 2094,
+      "title": "EBS Boron 20% EDTA Sodium Borate Chelated Micronutrient",
+      "slug": "ebs-boron-20-edta-sodium-borate-chelated-micronutrient",
+      "excerpt": "Buy EBS Boron 20% EDTA Sodium Borate Chelated Micronutrient for foliar and fertigation application. It enhances flowering, fruit formation, and calcium uptake, improving crop yield and quality. Suitable for all fruit, vegetable, and flower crops. available at the best price in Agribegri",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/ebs-boron-20-edta-sodium-borate-chelated-micronutrient.webp"
+    },
+    {
+      "id": 2096,
+      "title": "EBS Seaweed Extract Fertilizer Ascophyllum Nodusum",
+      "slug": "ebs-seaweed-extract-fertilizer-ascophyllum-nodusum",
+      "excerpt": "Buy Ebs Seaweed Extract Fertilizer Ascophyllum nodusum enhances soil fertility, boosts nutrient uptake, and improves plant health. Suitable for soil, foliar, and fertigation applications. available at the best price in Agribegri",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/ebs-seaweed-extract-fertilizer-ascophyllum-nodusum.webp"
+    },
+    {
+      "id": 2099,
+      "title": "Agriventure Magnesium Sulfate Water Soluble Fertilizer",
+      "slug": "agriventure-magnesium-sulfate-water-soluble-fertilizer",
+      "excerpt": "Buy Agriventure Magnesium Sulphate Water Soluble Fertilizer Online From AgriBegri With Free Nationwide Delivery Service.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/agriventure-magnesium-sulfate-water-soluble-fertilizer.webp"
+    },
+    {
+      "id": 2100,
+      "title": "Agriventure Calcium Nitrate Water Soluble Fertilizer",
+      "slug": "agriventure-calcium-nitrate-water-soluble-fertilizer",
+      "excerpt": "Buy Agriventure Calcium Nitrate Water Soluble Fertilizer Online To Increase Crop Quality And Yield From AgriBegri With Free Nationwide Delivery Service.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/agriventure-calcium-nitrate-water-soluble-fertilizer.webp"
+    },
+    {
+      "id": 2136,
+      "title": "Barfertile Active Barenbrug",
+      "slug": "barfertile-active-barenbrug",
+      "excerpt": "This Barenbrug fertilizer is a granular fertilizer with controlled release ideal for all year round. We recommend using this fertilizer for lawns 25-30g/m2, for garden plants 40-50g/m2, for vegetable plants 60-80g/m2.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barfertile-active-barenbrug.jpg"
+    },
+    {
+      "id": 2138,
+      "title": "Barfertile Ecolit",
+      "slug": "barfertile-ecolit",
+      "excerpt": "Liquid fertilizer in 5 kg version by Barenbrug to improve the structure of the soil and avoid dry-spots in the soil. The root system of a lawn or an ornamental outdoor plant benefits from the application of this product for the greater absorption of calcium, phosphorus and calcium. Barfertile Ecolit",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barfertile-ecolit.jpg"
+    },
+    {
+      "id": 2140,
+      "title": "Barfertile Planta-fit Biostimulant",
+      "slug": "barfertile-planta-fit-biostimulant",
+      "excerpt": "Liquid fertilizer in 5 kg version by Barenbrug to improve the structure of the soil and avoid dry-spots in the soil. The root system of a lawn or an ornamental outdoor plant benefits from the application of this product for the greater absorption of calcium, phosphorus and calcium. Barfertile Planti",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barfertile-planta-fit-biostimulant.jpg"
+    },
+    {
+      "id": 2145,
+      "title": "Barfertile Pro-start 5 kg",
+      "slug": "barfertile-pro-start-5-kg",
+      "excerpt": "Liquid fertilizer in 5 kg version by Barenbrug to improve the structure of the soil and avoid dry-spots in the soil. The root system of a lawn or an ornamental outdoor plant benefits from the application of this product for the greater absorption of calcium, phosphorus and calcium. Barfertile Planti",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barfertile-pro-start-5-kg.jpg"
+    },
+    {
+      "id": 2147,
+      "title": "Barfertile Radi-Fit Radical Biostimulant",
+      "slug": "barfertile-radi-fit-radical-biostimulant",
+      "excerpt": "Liquid fertilizer in 5 kg version by Barenbrug to improve the structure of the soil and avoid dry-spots in the soil. The root system of a lawn or an ornamental outdoor plant benefits from the application of this product for the greater absorption of calcium, phosphorus and calcium. Barfertile Radi-f",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barfertile-radi-fit-radical-biostimulant.jpg"
+    },
+    {
+      "id": 2149,
+      "title": "Barfertile Sport Barenbrug NPK",
+      "slug": "barfertile-sport-barenbrug-npk",
+      "excerpt": "This Barenbrug fertilizer is a controlled release granular fertilizer rich in nitrogen that has as its prerogative the vegetative push for the spring and late summer. This mineral fertilizer allows you to have a boost in the spring.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barfertile-sport-barenbrug-npk.jpg"
+    },
+    {
+      "id": 2151,
+      "title": "Barenbrug Algaturf Fertilizer",
+      "slug": "barenbrug-algaturf-fertilizer",
+      "excerpt": "The algaturf fertilizer by barenrbug is used to stimulate and maintain with its high potassium content outdoor ornamental plants and lawns throughout the year. Algaturf is a liquid fertilizer. Barfertile algaturf is a fertilizer that can be used in the year in conditions of stress of the plant or so",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barenbrug-algaturf-fertilizer.jpg"
+    },
+    {
+      "id": 2157,
+      "title": "Earthworm Humus",
+      "slug": "earthworm-humus",
+      "excerpt": "Earthworm humus is an excellent fertilizer ideal for exhausted soils, for floriculture, for vineyards and orchards. The package on sale is 40 liters. For other formats contact us.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/earthworm-humus.jpg"
+    },
+    {
+      "id": 2159,
+      "title": "Humus Fertilizer Earthworm Bucket",
+      "slug": "humus-fertilizer-earthworm-bucket",
+      "excerpt": "Refined earthworm humus fertilizer is an excellent fertilizer ideal for exhausted soils, for floriculture, for vineyards and orchards. The package on sale is 4.5 kg and is a valid ally for planting, for exhausted soils, for floriculture, foliar fertilization. For further formats contact us.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/humus-fertilizer-earthworm-bucket.jpg"
+    },
+    {
+      "id": 2161,
+      "title": "Barfertile Spring Autumn fertilizer",
+      "slug": "barfertile-spring-autumn-fertilizer",
+      "excerpt": "Barenbrug 20 kg granular fertilizer to improve soil structure and avoid dry spots in the soil. The root system of a lawn or an outdoor ornamental plant benefits from the application of this product for greater absorption of calcium, phosphorus and calcium. Barfertile Spring Autumn is a fertilizer th",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barfertile-spring-autumn-fertilizer.jpg"
+    },
+    {
+      "id": 2163,
+      "title": "Fertilizer Barenbrug Summer Winter",
+      "slug": "fertilizer-barenbrug-summer-winter",
+      "excerpt": "This fertilizer from Barenbrug in a 20 kg version guarantees strong resilience to difficult climatic periods for lawns and outdoor ornamental plants. Barfertile Summer Winter is a fertilizing fertilizer that can be used in summer and winter.",
+      "description": "",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/fertilizer-barenbrug-summer-winter.jpg"
+    },
+    {
+      "id": 2165,
+      "title": "Barenbrug K-PLUS fertilizer 2,5 kg",
+      "slug": "barenbrug-k-plus-fertilizer-25-kg",
+      "excerpt": "The k-plus fertilizer by barenrbug is used to stimulate and maintain with its high potassium content outdoor ornamental plants and lawns in the summer and winter periods. The packaging of this granular fertilizer is the 2,5 kg box. Barfertile K-plus is a fertilizer that can be used in the summer and",
+      "description": "The k-plus fertilizer by barenrbug is used to stimulate and maintain with its high potassium content outdoor ornamental plants and lawns in the summer and winter periods. The packaging of this granular fertilizer is the 2,5 kg box. Barfertile K-plus is a fertilizer that can be used in the summer and winter period in conditions of stress of the plant or soil.",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/barenbrug-k-plus-fertilizer-25-kg.jpg"
+    },
+    {
+      "id": 2346,
+      "title": "DAP Diammonium Phosphate",
+      "slug": "dap-diammonium-phosphate",
+      "excerpt": "Diammonium hydrogen phosphate is widely used in agriculture. It is used as a nitrogen and phosphorus fertilizer to supply nitrogen and phosphorus nutrients required by crops, promote plant growth, improve yield and quality. In addition, diammonium hydrogen phosphate can also be used to control phosp",
+      "description": "item\nvalue\n\nClassification\nPhosphate Fertilizer\n\nType\nDiammonium phosphate\n\nCAS No.\n7783-28-0\n\nOther Names\nDiamoni Photphat ( DAP )\n\nMF\n(NH4)2HPO4\n\nEINECS No.\n231-987-8\n\nPlace of Origin\nChina\n\nRelease Type\nQuick\n\nState\nGRANULAR\n\nPurity\n99%\n\nApplication\nAgriculture\n\nBrand Name\nNongsheng\n\nModel Number\n64% DAP Fertilizer\n\nColor\nBrown/Yellow\n\nProduct Name\nDiammounion Phosphate Fertilizer\n\nGrade\nFertilizer Grade\n\nPacking\nPacked in 1 ton jumbo bags 25kg/50kg/bag; in Bulk\n\nMoisture\n3% Max\n\nP2O5\n46% min\n\nMOQ\n25 Ton\n\nUsage\nHigh-efficiency Compound Fertilizer\n\nNitrogen\n18% Min\n\nAppearance\nBrown/Yellow Granules\n\nDiammonium hydrogen phosphate is widely used in agriculture. It is used as a nitrogen and phosphorus fertilizer to supply nitrogen and phosphorus nutrients required by crops, promote plant growth, improve yield and quality. In addition, diammonium hydrogen phosphate can also be used to control phosphorus deficiency in soil, and can improve soil texture and fertility.\n\nDiammonium Phosphate(DAP) application:\n\nPhosphorus fertilizer is generally used as the base fertilizer. Under the same conditions, the higher the soil available phosphorus content, the lower the fertilizer efficiency. Th",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/dap-diammonium-phosphate.webp"
+    },
+    {
+      "id": 2348,
+      "title": "Superphosphate",
+      "slug": "superphosphate",
+      "excerpt": "Supply plant phosphorus, calcium, sulfur and other elements, with improved alkaline soil effect. Used as a base fertilizer, foliar application, foliar spray. Mixed with nitrogen fertilizer use, there nitrogen fixation, to reduce the loss of nitrogen. Can promote the germination of plants, root lengt",
+      "description": "Calcium superphosphate\n\nSpecification:\n\nP2O5 &gt; 16%\n\nS&gt;11%\n\nCa&gt;16%\n\nPackage: 25KG BAG, 50KG BAG.\n\nSupply plant phosphorus, calcium, sulfur and other elements, with improved alkaline soil effect. Used as a base fertilizer, foliar application, foliar spray. Mixed with nitrogen fertilizer use, there nitrogen fixation, to reduce the loss of nitrogen. Can promote the germination of plants, root length, branching, strong and mature, can be used as raw material for the production of fertilizer.\n\nItem\nTest Standards\nTest Results\n\nTotal P2O5%\n46.0min\n46.38%\n\nAvailable P2O5%\n42.0min\n42.68%\n\nWater Soluble P2O5%\n37.0min\n37.52%\n\nFree Acid%\n0.3max\n0.25%\n\nFree Water(H2O)%\n4.0max\n2.10%\n\nMoisture%\n5.0max\n0.52%\n\nParticle Size  (2-4.75mm)\n90%min\n93.30%\n\nColor\nGrey\n\nOrigin\nChina\n\n\n\nPACKAGING AND TRANSPORTATION\n\n\n\nFACTORY DISPLAY\n\n\n\nFAQ\n\nQ: Are you a factory or a trading company?\n\nA: We are a company integrating manufacturing and trading.\n\nQ: Can you provide samples for testing before mass production?\n\nA: Of course, we can send you samples for free, and we also attach COA, but for the sample shipping fee, our company can't afford it!\n\nQ: How can I get an accurate quotation?\n\nA: Please tell u",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/superphosphate.webp"
+    },
+    {
+      "id": 2350,
+      "title": "Ammonium Sulfate",
+      "slug": "ammonium-sulfate",
+      "excerpt": "In agriculture, ammonium sulfate is widely used as a nitrogen fertilizer, providing essential nitrogen and sulfur nutrients for plant growth.\n\n&nbsp;",
+      "description": "Name of Commodity:  Ammonium Sulphate Granule (Steel grade)\n\nITEMS\nSTANDARD\nTEST RESULT\n\nAppearance\nLight yellow granules\nLight yellow granules\n\nHardness\n30N Min\n39.57\n\nMoisture\n1 % Max\n0.15%\n\nNitrogen\n20.5 % Min\n20.98%\n\nFree Acid\n0.2 % Min\n0.03%\n\nGranule size\n98 % Min\n99.80%\n\nName of Commodity:  Ammonium Sulphate (Capro grade)\n\n&nbsp;\n\nITEMS\nSTANDARD\nTEST RESULT\n\nAppearance\nNo visible mechanical impurities\nNo visible mechanical impurities\n\nNitrogen (dry basis)\n21% Min\n21.10%\n\nWater Content\n0.2% Max\n0.10%\n\nFree acid (H2SO4)\n0.03% Max\n0.00%\n\nWater-insoluble content\n0.01% Max\n0.01%\n\nConclusion\nSuperior product\n\n&nbsp;\n\n\n\nPACKAGING AND TRANSPORTATION\n\n\n\nFACTORY DISPLAY\n\n\n\nFAQ\n\nQ: Are you a factory or a trading company?\n\nA: We are a company integrating manufacturing and trading.\n\nQ: Can you provide samples for testing before mass production?\n\nA: Of course, we can send you samples for free, and we also attach COA, but for the sample shipping fee, our company can't afford it!\n\nQ: How can I get an accurate quotation?\n\nA: Please tell us the accurate product specifications, particle size, color, and your use, and we will provide you with an accurate quotation.\n\nQ: Can you provide COA?\n\nA",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/ammonium-sulfate.webp"
+    },
+    {
+      "id": 2353,
+      "title": "Mapmonoammonium Phosphate",
+      "slug": "mapmonoammonium-phosphate",
+      "excerpt": "MAP is an efficient source of phosphorus.\nIt facilitates plant uptake of the phosphorus naturally present in the soil. This is due to the ammonium (NH4+) in MAP, which lowers the pH in the root zone and thus enhances phosphorus availability.\n\n&nbsp;",
+      "description": "Item\nProduct Name\nCAS Number\n\nSTPP\nSodium Tripolyphosphate\n7758-29-4\n\nSHMP\nSodium Hexametaphosphate\n10124-56-8\n\nPAM\nPolyacrylamide\n9003/5/8\n\nTSP\nTrisodium Phosphate\n10101-89-0\n\nEDTA 2Na\nDisodium EDTA\n6381-92-6\n\nEDTA 4Na\nEthylenediaminetetraaceticacid tetrasodium salt\n13235-36-4\n\nTSPP\nTetrasodium Pyrophosphate\n7722-88-5\n\nDSP\nDisodium Hydrogen Phosphate\n10039-32-4\n\nMSP\nMonosodium Phosphate\n603-853-2\n\nMKP\nMonopotassium Phosphate\n7778-77-0\n\nMAP\n Monoammonium Phosphate(MAP 12-61-0)\n                                   7722-76-1\n\nTKPP\nTetrapotassium Pyrophosphate\n7320-34-5\n\nSoda Ash\nSoda Ash\n497-19-8\n\nCirtic Acid\nCirtic Acid\n77-92-9\n\nGlucose/Dextrose\nGlucose/Dextrose\n58367-0104\n\nSodium Gluconate\nSodium Gluconate\n527-07-1\n\nHEDP\nHydroxyethylidene Diphosphonic Acid\n2809-21-4\n\nAA.AMPS\nAcrylic Acid-2-Acrylamido-2-Methylpropane Sulfonic Acid Copolymer\n40623-75-4\n\nMonoammonium Phosphate(MAP 12-61-0)\n\nMAP is an efficient source of phosphorus.\n\nIt facilitates plant uptake of the phosphorus naturally present in the soil. This is due to the ammonium (NH4+) in MAP, which lowers the pH in the root zone and thus enhances phosphorus availability.\n\n&nbsp;\n\nMonoammonium phosphate (short for MAP 12-61-0) is",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/mapmonoammonium-phosphate.webp"
+    },
+    {
+      "id": 2354,
+      "title": "Monopotassium Phosphate",
+      "slug": "monopotassium-phosphate",
+      "excerpt": "Monopotassium phosphate (KH2PO4) is a water-soluble salt used as a fertilizer, providing plants with phosphorus and potassium. It aids root development and disease resistance, enhancing overall plant health.\n\n&nbsp;",
+      "description": "General Information:\n\nOrigin: China\n\nCAS No.: 7778-77-0\n\nAUCO No.: 336\n\nPacking: 25kg bag\n\n&nbsp;\n\nSpecification:\n\nItems\nStandard\n\nAppearance\nWhite crystal\n\nContent(KH2PO4)\n≥99.0%\n\nPhosphorus (P2O5)\n≥52.0%\n\nPotassium oxide(K2O)\n≥34.0%\n\nPH value (3% water solution)\n4.3-4.7\n\nMoisture\n≤0.2%\n\nWater-insoluble\n≤0.01%\n\nChloride (Cl-)\n≤0.05%\n\nAs\n≤50mg/kg\n\nPb\n≤20mg/kg\n\nCd\n≤2mg/kg\n\nCr\n≤2mg/kg\n\nHg\n ≤1mg/kg\n\n&nbsp;\n\n\n\nPACKAGING AND TRANSPORTATION\n\n\n\nFACTORY DISPLAY\n\n\n\nFAQ\n\nQ: Are you a factory or a trading company?\n\nA: We are a company integrating manufacturing and trading.\n\nQ: Can you provide samples for testing before mass production?\n\nA: Of course, we can send you samples for free, and we also attach COA, but for the sample shipping fee, our company can't afford it!\n\nQ: How can I get an accurate quotation?\n\nA: Please tell us the accurate product specifications, particle size, color, and your use, and we will provide you with an accurate quotation.\n\nQ: Can you provide COA?\n\nA: Of course, we can provide it, but only ordinary products, if you want an accurate COA, we need to produce samples. After testing, provide an accurate COA.\n\nQ: Can you accept OEM (special specifications, sizes)?\n\nA: ",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/monopotassium-phosphate.png"
+    },
+    {
+      "id": 2358,
+      "title": "NPK",
+      "slug": "npk",
+      "excerpt": "Also can add other nutrition element according to your request.\nProduct name:Zinc Sulphate Monohydrate feed grade/fertilizer grade Chemical formula:ZnSO4·H2O CAS:7446-19-7 Product performance: Zinc is the forming element of many enzymes and hormone, and participates in metabolism of protein, carbohy",
+      "description": "Item\nCompound NPK fertilizer\n\nFormula\nN-P2O5-K2O\n\nState\nGranular/Powder\n\nColour\nwhite,red,yellow,OEM color\n\nGranular size\n2-5mm\n\nMoisture content\n&lt;2%\n\nAdvantage\ncan do special formula as you request.\n\nAlso can add other nutrition element according to your request\n\n&nbsp;\n\n&nbsp;\n\nNO\nType\nFormular\nTotal Quantity of Elements\n\n1\n\n15-15-15\n45\n\n2\n\n16-16-16\n48\n\n3\n\n17-17-17\n51\n\n4\nBalance\n18-18-18\n54\n\n5\n\n19-19-19\n57\n\n6\n\n20-20-20\n60\n\n7\n\n2012/11/18\n41\n\n8\n\n2012/12/17\n41\n\n9\n\n2015/5/20\n40\n\n10\nHigh K\n2015/5/25\n45\n\n11\n\n2015/8/20\n43\n\n12\n\n2015/9/20\n44\n\n13\n\n16-16-8\n40\n\n14\nDuck Shape\n20-20-15\n55\n\n15\nHigh P\n11-19-15\n45\n\n16\n\n21-17-3\n41\n\n17\n\n2022/9/9\n40\n\n18\n\n2024/6/10\n40\n\n19\n\n2024/9/9\n42\n\n20\nHigh N\n2025/5/5\n35\n\n21\n\n2027/6/6\n39\n\n22\n\n2028/8/8\n44\n\n23\n\n1930/9/9\n48\n\n24\n\n1930/10/10\n50\n\n25\n\n2018/8/18\n44\n\n26\nV Shape\n2018/9/18\n45\n\n27\n\n2019/9/19\n47\n\nadvantage\ncan do special formula as you request.\n\nAlso can add other nutrition element according to your request\n\n&nbsp;\n\n&nbsp;\n\n&nbsp;\n\n\n\nPACKAGING AND TRANSPORTATION\n\n\n\nFACTORY DISPLAY\n\n\n\nFAQ\n\nQ: Are you a factory or a trading company?\n\nA: We are a company integrating manufacturing and trading.\n\nQ: Can you provide samples for testing before mass production?\n\n",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/npk.webp"
+    },
+    {
+      "id": 2359,
+      "title": "Zinc Sulfate Heptahydrate",
+      "slug": "zinc-sulfate-heptahydrate",
+      "excerpt": "Zinc is the forming element of many enzymes and hormone, and participates in\nmetabolism of protein, carbohydrate as well as lipid. When lack of zinc, animals\nexhibit inappetence, slow growth, thick and disorderly clothing hair, depilation, dry\nand chappy skin and unease-cure wound. Adding high dosag",
+      "description": "Product name:Zinc Sulphate Monohydrate feed grade/fertilizer grade\n\nChemical formula:ZnSO4·H2O\n\nCAS:7446-19-7\n\nProduct performance:\n\nZinc is the forming element of many enzymes and hormone, and participates in\n\nmetabolism of protein, carbohydrate as well as lipid. When lack of zinc, animals\n\nexhibit inappetence, slow growth, thick and disorderly clothing hair, depilation, dry\n\nand chappy skin and unease-cure wound. Adding high dosage zinc in initial feed for\n\nsucking can reduce diarrhea and increase weight.\n\nSpecification\n\nTEST ITEMS\n\nMgSO4 · 7H2O\nMgSO4 · H2O\nMgSO4\n\nMAIN CONTENT\n≥99.0%\n≥99.0%\n≥98.0%\n\nMAGNESIUM SULPHATE(MgSO4)\n≥48.59%\n≥86.00%\n≥98.00%\n\nMAGNESIUM OXIDE(MgO)\n≥16.24%\n≥28.69%\n≥32.66%\n\nMAGNESIUM(Mg)\n≥9.80%\n≥17.21%\n≥19.6%\n\nFERRON(Fe)\n≤0.0015%\n≤0.0015%\n≤0.0015%\n\nCHLORIDE(Cl)\n≤0.014%\n≤0.014%\n≤0.014%\n\nHEAVY METAL(Pb)\n≤0.0006%\n≤0.0008%\n≤0.0008%\n\nARSENIC(As)\n≤0.0002%\n≤0.0002%\n≤0.0002%\n\n\n\nPACKAGING AND TRANSPORTATION\n\n\n\nFACTORY DISPLAY\n\n\n\nFAQ\n\nQ: Are you a factory or a trading company?\n\nA: We are a company integrating manufacturing and trading.\n\nQ: Can you provide samples for testing before mass production?\n\nA: Of course, we can send you samples for free, and we also attach C",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/zinc-sulfate-heptahydrate.webp"
+    },
+    {
+      "id": 2360,
+      "title": "NITROGEN FERTILIZER",
+      "slug": "nitrogen-fertilizer",
+      "excerpt": "It promotes lush green foliage, enhances photosynthesis, and boosts crop yields. Common forms include ammonium sulfate, urea, and ammonium nitrate. While effective, excessive use can lead to environmental pollution and soil degradation.",
+      "description": "item\nvalue\n\nClassification\nCompound Fertilizer\n\nType\nNPK\n\nCAS No.\n66455-26-3\n\nOther Names\nNpk Complex Fertilizers\n\nMF\nN-P2O5-K2O\n\nEINECS No.\n56632-41\n\nPlace of Origin\nChina\n\nRelease Type\nControlled\n\nState\nGRANULAR\n\nPurity\nHigh Purity\n\nApplication\nAgriculture\n\nAppearance\nGranule\n\nN-P-K\n15 15 15\n\nNPK\n2012/8/20\n\nNpk\n20--8-12\n\nColor\nwhite/yellow/blue/green\n\nSolubility\nSoluble\n\nIts main characteristics are low dosage, convenient use, low usage cost, fast crop absorption, and extremely high nutrient utilization rate. In this way, people can completely design formulas based on the nutritional requirements required for crop growth. Scientific formulas will not cause fertilizer waste, making their fertilizer utilization rate about 2-3 times that of conventional compound chemical fertilizers (in China, the fertilizer utilization rate of ordinary compound fertilizers is only 30% -40%). Secondly, water-soluble fertilizers are quick acting fertilizers, allowing growers to quickly see the effectiveness and performance of fertilizers, The fertilizer formula can be adjusted at any time according to different crop growth trends.\nThe application method of water-soluble fertilizer is very simple. It ",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/nitrogen-fertilizer.webp"
+    },
+    {
+      "id": 2362,
+      "title": "UREA",
+      "slug": "urea",
+      "excerpt": "Urea is a neutral quick-acting fertilizer with a chemical formula of CO(NH2)2 and a nitrogen content of up to 46%. ‌‌Urea is a white crystal that is tasteless and odorless, easily soluble in water, ethanol and benzene, and slightly soluble in ether and chloroform. The nitrogen content of urea is the",
+      "description": "WHAT IS DIESEL EXHAUST FLUID (DEF)\nDiesel Exhaust Fluid (DEF) is a non-toxic, high purity solution comprised of 32.5% urea and 67.5% de-ionized\n\nwater for specific use in Selective Catalytic Reduction (SCR) systems. Using this fluid in diesel-powered vehicles, such as\n\ntrucks, buses, and tractors, helps to reduce the amount of nitrogen oxides (NOx) emitted into the air by 90%. It is not a fuel additive and must be filled into the dedicated Diesel Exhaust Fluid tank on your diesel vehicle.\n\nSCR/DEF grade urea, automotive grade urea high purity\n\nadblue grade urea\n\nNitrogen: 46.6%\n\nMoisture: 0.35%\n\nBiuret:0.7%\n\nParticle size(0.85-2.80mm): 94%\n\nUrea 46% or Urea N 46% or Urea prilled or Industry Urea\n\nCAS:57-13-6\n\nMolecular Formula:CH4N2Ol\n\nMolecular Weight:60.06\n\nMelting point:132-135C\n\nRelative density:1.335g/ml at 25C(lit)\n\nHow Diesel Exhaust Fluid Works\n\nWhen injected into the exhaust stream with a specialized dosing module, DEF vaporizes, leaving amonia molecules en route to the catalytic converter; once there, it converts NOx molecules into harmless nitrogen and water vapor-making for cleaner emissions. Making sure you do not run out of DEF in an SCR equipped truck is simple - wat",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/urea.png"
+    },
+    {
+      "id": 2364,
+      "title": "Automotive Urea",
+      "slug": "automotive-urea",
+      "excerpt": "Automotive urea has the advantages of low toxicity, low corrosiveness, and non flammability, and is mainly used for exhaust purification of heavy-duty diesel engines, such as large trucks and buses. On diesel vehicles, urea is typically used in conjunction with exhaust aftertreatment systems such as",
+      "description": "Name\nSulfur Coated Urea\nClass\n         AAA\n\nMark\n/\nDepartment\nQuality Control Department\n\nSample Base\n200 MT\nSample Size\n500g\n\nBatch No\n2019080510\nSampling Personnel\n      Bai Jinsheng\n\nSampling Date\n5th Aug 2019\nTest Date\n5th Aug 2019\n\nInspection basis\nGB29401-2012  Sulfur Coated Urea(SCU)\n\nNo\nItems\nStandard\nTest Results\n\n1\nNitrogen %\n≥46.0\n46.2\n\n2\nInitial Release of Nutrient %\n≤15.0\n5.2\n\n3\nSeven Days Dissolution Rate %\n≤30.0\n15.6\n\n4\n                      Moisture %\n≤1.0\n0.53\n\n5\nBiuret %\n≤1.2\n0.27\n\n6\nSulfur %\n≥15.0\n18.4\n\n7\nSize (2.00-4.75mm) %\n≥90.0\n96\n\nTest Result\nProduct Qualified.\n\n&nbsp;\n\n\n\nPACKAGING AND TRANSPORTATION\n\n\n\nFACTORY DISPLAY\n\n\n\nFAQ\n\nQ: Are you a factory or a trading company?\n\nA: We are a company integrating manufacturing and trading.\n\nQ: Can you provide samples for testing before mass production?\n\nA: Of course, we can send you samples for free, and we also attach COA, but for the sample shipping fee, our company can't afford it!\n\nQ: How can I get an accurate quotation?\n\nA: Please tell us the accurate product specifications, particle size, color, and your use, and we will provide you with an accurate quotation.\n\nQ: Can you provide COA?\n\nA: Of course, we can prov",
+      "categories": [
+        "fertilizers"
+      ],
+      "image": "/images/products/automotive-urea.png"
+    },
+    {
+      "id": 2366,
+      "title": "ORGANIC WHITE CANE SUGAR 1-45",
+      "slug": "organic-white-cane-sugar-1-45",
+      "excerpt": "Highly refined white crystal sugar, free from any harmful substances, suitable for human consumption and compliant with international food standards . ICUMSA 1 45 indicates the highest quality and purity, with a sparkling white color, ideal for both industrial use and retail packaging.",
+      "description": "",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/organic-white-cane-sugar-1-45.jpg"
+    },
+    {
+      "id": 2373,
+      "title": "Refined Brown Sugar Icumsa 600 - 1200",
+      "slug": "refined-brown-sugar-icumsa-600-1200",
+      "excerpt": "Refined Brown Sugar with an ICUMSA rating of 600-1200 is a type of raw brown sugar that retains a significant amount of molasses, giving it a rich flavor and darker color compared to white sugar. It is less refined than white sugar and has a higher mineral content. This type of sugar is commonly use",
+      "description": "Brown Sugar with an ICUMSA (International Commission for Uniform Methods of Sugar Analysis) range of 600-1200 is a type of raw sugar that retains a significant amount of molasses, giving it a rich, caramel-like flavor and a moist texture. This sugar is less refined than white sugar, resulting in a higher content of natural minerals and a darker color. It is widely used in baking, cooking, and various culinary applications where a deep, robust sweetness is desired.\n\nSpecifications of Brown Sugar ICUMSA 600-1200:\n\nProduct:  Brown Sugar\n\nICUMSA:  600-1200\n\nColor:  Dark brown, with a rich molasses content\n\nMoisture Content:  0.5% max\n\nSucrose Content:  96% min\n\nReducing Sugars:  3.5% max\n\nAsh Content:  0.15% max\n\nPolarization:  96% min\n\nGranulation:  Coarse to medium crystals, slightly sticky texture\n\npH Level:  4.5 – 5.5\n\nForeign Matter:  0.1% max\n\nSmell:  Characteristic molasses aroma, free from foreign odors\n\nFlavor:  Sweet with a distinct molasses flavor\n\nKey Features:\n\nRich Flavor:  The high molasses content provides a deep, caramel-like flavor that enhances baked goods, marinades, sauces, and desserts.\n\nNatural Minerals:  Contains natural minerals such as calcium, potassium, and ",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/refined-brown-sugar-icumsa-600-1200.jpeg"
+    },
+    {
+      "id": 2375,
+      "title": "Thai Jasmine Black Cargo Rice",
+      "slug": "thai-jasmine-black-cargo-rice",
+      "excerpt": "Thai Jasmine Black Cargo Rice is  black color, comes with good taste and its unique fragrance . Only its husk has been removed to retain its nutrients, vitamins and mineral. Jasmine Black Cargo Rice contains vitamin B1, B2, B complex, Iron, Magnesium, Phosphorous, Calcium and niacin, fiber.",
+      "description": "Thai Jasmine Black Cargo Rice is black color, comes with good taste and its unique fragrance. Only its husk has been removed to retain its nutrients, vitamins and mineral.Jasmine Black Cargo Rice contains vitamin B1, B2, B complex, Iron, Magnesium, Phosphorous, Calcium and niacin, fiber.",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-jasmine-black-cargo-rice.webp"
+    },
+    {
+      "id": 2378,
+      "title": "Thai White rice 100% broken",
+      "slug": "thai-white-rice-100-broken",
+      "excerpt": "We (Freem Enterprise Co Ltd) are the prominent Parboiled Broken Rice A1 Exporter and Supplier in Thailand. We are contributory in delivering to our valued customer’s superior quality Broken Parboiled Rice A1 which is obtainable with following specification at the lowest price",
+      "description": "Specifications of Thai White Rice 100% broken\n\n&nbsp;\n\nVariety: White Broken\n\nBroken : 100% Max\n\nColour : White/Yellow\n\nMoisture : 14% max\n\nForeign matters : 0.1% Max\n\nRed Grains: 1% Max\n\nBlack Grains: 0.10% Max\n\nStained and Bored Grains: 3.0% Max\n\nInjured and Damaged Grains : 0.4% Max\n\nGeneral Defects Aggregated : 4.5% Max\n\n1/2 Grains : 56% Max\n\n1/2 to 3/4 Grains : 43% Min\n\nVery Small Broken : 1.5% Min\n\nWhole Grains : 1% Max\n\nNon-Gelatinized Grains : 30% Min\n\nPaddy : 5 Grains Per KG\n\nCrop : Current Year\n\nCountry of Origin : Thailand\n\nPayment Terms: : L/C / TT\n\nThai Parboiled Rice 100% Sortex (Thai Parboiled Rice 100 Percent Sorted)\n\n&nbsp;\n\nParboiled Rice Thailand is one of the leading Manufacturers, Supplier and Exporter of Thai Parboiled Rice 100% Sortex. Parboiled Rice Thailand organically nurtures Thai Sortex Parboiled Rice (100%) by consuming inorganic rich fertilizers. The Thai Parboiled Rice 100% Sortex grow in Thailand, and supplied by us all around the world. 100% Sortex Thai Parboiled Rice is known globally for its good flavor and alluring taste.\n\n&nbsp;\n\nWe offered Parboiled Rice 100 Percent Sortex, for Human Feasting as well as for Animals feed. Its also widely used in",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-white-rice-100-broken.png"
+    },
+    {
+      "id": 2379,
+      "title": "Thai Jasmine Red Cargo Rice",
+      "slug": "thai-jasmine-red-cargo-rice",
+      "excerpt": "Thai Red Cargo Rice is a variety of non-glutinous long-grain rice, related to brown rice, in that it is simple rice, merely the color of the fiber is purple, maroon or red. Only the shells of the rice grains are detached through the milling procedure, recalling all the vitamins, nutrients and minera",
+      "description": "Thai Red Cargo Rice is a worthy cause of riboflavin (vitamin B), thiamin (vitamin B), iron, fiber and calcium. The taste of baked thai red cargo rice is usually extra sweet-smelling and nutty, and the rice becomes more hard to chew than normal white polished rice. Thai Red Cargo Rice takes time-consuming to cook than normal white rice, but not so long as the brown rice takes.\n\n&nbsp;\n\nWe are Exporting high quality of Red Cargo Rice from Thailand. You can purchase the best quality rice at economical price from us. Parboiled Rice Thailand is a renowned Red Cargo Rice Exporter from Bangkok Thailand.\n\n&nbsp;\n\nSpecifications of Thai Red Cargo Rice\n\nTexture: Soft\n\nKind: Brown Rice\n\nVariety: Long Grain Rice\n\nColor: Red\n\nMoisture: 14% Max\n\nAdmixture: 2% Max\n\nStyle : Dried\n\nCultivation Type : Organic\n\nCrop Year : Current",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-jasmine-red-cargo-rice.png"
+    },
+    {
+      "id": 2380,
+      "title": "Thai Hom Patum Rice",
+      "slug": "thai-hom-patum-rice",
+      "excerpt": "Thai Hom Patum Rice RD31(Pathum Thani 80) has been certified since 6 March 2007. Harvesting period is 110 days. A short period after cooking, the rice has fragrance and soft texture. Since the grains have amylose around 27.3 – 29.8 % so, once the rice temperature becomes low, the texture becomes har",
+      "description": "Thai Jasmine rice / Pathumthani Fragrant Rice is the new strain of Thai Fragrant Rice, which was developing in Pathumthani rice institute of Thailand in many years ago. Due to its related appearance, authentic soft texture and regular fragrant similar to Thai jasmine rice, it is measured as the 2nd sort of Thai Jasmine rice and or Thai Hom-mali Rice.\n\n&nbsp;\n\nSpecifications of Thai Jasmine rice / Pathumthani Fragrant Rice\n\nPurity : 80%\n\nWhole Kernels: 60% Max\n\nVariety: Long Grain Rice\n\nBroken (5.2 mm.): 4.5% Max\n\nMoisture: 14% Max\n\nAdmixture: 1% Max\n\nDamaged kernels : 0.2% Max\n\nForeign Matter : 0.2% Max\n\nYellow kernels: 0.2% Max\n\nMilling Degree: Extra Well Milled\n\nCrop Year : 2012-2013\n\nWhite Glutinous Rice : 1.5% Max\n\nPaddy (grain per 1 kg.): 7 Grains\n\nCountry of Origin : Thailand",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-hom-patum-rice.png"
+    },
+    {
+      "id": 2680,
+      "title": "Granulated Sugar (White Sugar)",
+      "slug": "granulated-sugar-white-sugar",
+      "excerpt": "Discover the exceptional quality of our Granulated Sugar, a fundamental ingredient for every kitchen. This meticulously refined White Sugar is prized for its fine crystal structure, ensuring rapid dissolution and even sweetness in a variety of culinary applications",
+      "description": "Discover the exceptional quality of our Sugar, a fundamental ingredient for every kitchen. This meticulously refined White Sugar is prized for its fine crystal structure, ensuring rapid dissolution and even sweetness in a variety of culinary applications. Whether you’re an avid baker, a culinary enthusiast, or just looking to sweeten your favorite beverages, our Sugar is the ideal choice.\n\nDerived from high-quality sugar cane and subjected to rigorous processing standards, this sugar guarantees purity and consistency. The fine texture of the crystals makes it effortless to incorporate into both hot and cold recipes, ensuring a smooth blend without any grittiness. Use it for baking delectable cakes, cookies, and pastries, or sweeten your morning coffee, tea, or other beverages to perfection.\n\nOur Granulated Sugar is more than just a sweetener; it’s a reliable kitchen companion that enhances the flavors of your culinary creations. Its versatility extends beyond the realm of desserts to become an integral part of savory dishes, sauces, and marinades. The convenient resealable packaging preserves freshness, ensuring that your sugar stays pristine and ready for use.\n\nChoose our  Sugar f",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/granulated-sugar-white-sugar.jpg"
+    },
+    {
+      "id": 2683,
+      "title": "Fine Grain White Sugar",
+      "slug": "fine-grain-white-sugar",
+      "excerpt": "Sourced with care and precision, our Fine Grain White Sugar originates from the heart of Thailand, a region renowned for its sugar production. This sugar undergoes a meticulous refining process to achieve a level of purity that meets the highest industry standards. The result is a sugar that not onl",
+      "description": "Indulge in the culinary excellence of our Fine Grain White Sugar, a premium sweetener that sets a new standard for refinement. Meticulously processed to deliver small and delicate crystals, this sugar is the epitome of culinary luxury. Its fine grain ensures rapid dissolving, allowing for an even distribution of sweetness in your favorite beverages, desserts, and culinary masterpieces.\n\nSourced with care and precision, our Fine Grain White Sugar originates from the heart of Thailand, a region renowned for its sugar production. This sugar undergoes a meticulous refining process to achieve a level of purity that meets the highest industry standards. The result is a sugar that not only sweetens but elevates the overall quality of your recipes.\n\nPerfect for use in delicate pastries, creamy beverages, and as a versatile ingredient in your daily cooking, our Fine Grain White Sugar brings a touch of sophistication to your culinary endeavors. Its smooth texture ensures a seamless integration into your recipes, whether you’re crafting a decadent cake, stirring up a refreshing iced tea, or adding a hint of sweetness to your morning coffee.\n\nAdd a dash of luxury to your kitchen with our Fine ",
+      "categories": [
+        "sugar"
+      ],
+      "image": "/images/products/fine-grain-white-sugar.jpg"
+    },
+    {
+      "id": 2705,
+      "title": "Thai White Rice 25% Broken",
+      "slug": "thai-white-rice-25-broken",
+      "excerpt": "Freem Enterprise Co Ltd deals in Long Grain White Rice (25% Broken) to our valuable clients situated in different parts of the globe. The Long Grain White Rice 25% Broken, presented by us, acquired from the authorized vendors only. Long Grain White Rice 25% Broken is of the best quality and you can ",
+      "description": "Specifications of Long Grain White Rice 25% Broken\n\n&nbsp;\n\nBroken on 2/3rd Basis : 25% Max\n\nWhole Kernel Length: 5.8-6.2mm\n\nMoisture : 14% max\n\nDamaged / Discolored : 2% Max\n\nDamaged Kernels : 0.25% Max\n\nYellow Kernels : 1.5% Max\n\nChalky Kernel : 10% Max\n\nRed &amp; Red Streaked Kernels : 7% Max\n\nGlutinous Kernels: 2% Max\n\nImmature Kernel: 1.5% Max\n\nMilling Degree: Well Milled 100% sortexed clean\n\nColor: White\n\nNature: Soft\n\nCrop Year: Current\n\nOwed to intense familiarity in food manufacturing, Freem Enterprise Co Ltd is recognized as the foremost manufacturer, Exporter and Supplier of Parboiled Broken Rice A1. We have with us expert attaining agents, who acquire expert quality natural nourishments and substances to grow this rice at our end. To preserve its authenticity for protracted period of time, our skilled packing team packs this parboiled broken rice in finest class packing protections. Comprehensively used for making delightful rice cooking dishes, our Parboiled Broken A.1 Rice is required among customers for its fragrance &amp; vitamin content and rich minerals.",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-white-rice-25-broken.png"
+    },
+    {
+      "id": 2706,
+      "title": "Thai White Rice 10% Broken",
+      "slug": "thai-white-rice-10-broken",
+      "excerpt": "Clients of Freem Enterprise Co Ltd can avail Long Grain White Rice(10% Broken) from us at any time they want. The Long Grain White Rice 10% broken that we offer known for its quality, non-stickiness and taste. Long Grain White Rice 10 Percent Broken can be availed in different packaging quantities f",
+      "description": "Specifications of Long Grain White Rice 10 % Broken\n\nBroken on 2/3rd Basis: 10% Max\n\nMoisture: 14% Max\n\nDamaged/Discolored: 2% Max\n\nRed/Red Streak: 0.25% Max\n\nForeign matter including paddy: 1%\n\nChalky ½ (half) basis: 5% Max\n\nWhiteness: 40deg kett Minimum\n\nMilling Degree: Well Milled 100% sortexed clean\n\nColor: White\n\nNature: Soft",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-white-rice-10-broken.png"
+    },
+    {
+      "id": 2707,
+      "title": "White Rice 5% Broken",
+      "slug": "white-rice-5-broken",
+      "excerpt": "We (Freem Enterprise Co Ltd) are the prominent Thai White Rice 5% Broken Exporter and Supplier in Thailand. We are contributory in delivering to our valued customer’s superior quality 5 Percent White Rice which is obtainable with following specification at the lowest price.",
+      "description": "Specifications of Thai White Rice 5 Percent Broken\n\n&nbsp;\n\nVariety: Long Grain Rice\n\nBroken : 5% Max\n\nColour : White\n\nTexture : Soft\n\nStyle : Dried\n\nMoisture : 14% max\n\nForeign matters : 0.5% Max\n\nRed Kernels: 2% Max\n\nYellow Kernels : 0.5% Min\n\nChalkay Kernels : 6% Min\n\nImmature Kernels : 0.2% Max\n\nPaddy : 15 Grains Per KG\n\nCrop : Current Year\n\nMilling Degree : Well Milled &amp; Polished",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/white-rice-5-broken.webp"
+    },
+    {
+      "id": 2708,
+      "title": "Thai White Rice 100% Sortexed",
+      "slug": "thai-white-rice-100-sortexed",
+      "excerpt": "Thai White rice 100% sortexed is a premium variety of rice that has undergone a meticulous sorting process to ensure exceptional quality. Sourced from the fertile fields of Thailand, this rice is renowned for its pure white grains that are long, slender, and fluffy in texture. The sortexing techniqu",
+      "description": "Thai White Rice 100% Grade A\n\n&nbsp;\n\nSpecification\n\n-Long grain class 1            70.00% min\n\n-Long grain class 2            –\n\n-Long grain class 3            5.00% max\n\n-Short grain         0.00%\n\n-Whole kernels  60.00% min\n\n-Brokens              4.00% max\n\n-Small Brokens   0.10% max\n\n-Small Brokens C1            0.10% max\n\n-Red kernels and or undermilled kernels 0.50% max\n\n-Yellow kernels   0.10% max\n\n-Chalky Kernels  3.00% max\n\n-Damaged kernels             0.20% max\n\n-White glutinous rice       1.50% max\n\n-Undeveloped, immature kernels, other seeds and foreign matter either singly or combined           0.10% max\n\n-Partly black kernels and peck kernels combined –\n\n-Paddy (grains per 1 kg) 3 grains max\n\n-Moisture            14.00% max\n\n-Milling degree  Extra Well Milled\n\n&nbsp;\n\nThai White Rice 100% Grade B\n\n&nbsp;\n\nSpecification\n\n-Long grain class 1            40.00% min\n\n-Long grain class 2            –\n\n-Long grain class 3            –\n\n-Short grain         5.00% max\n\n-Whole kernels  60.00% min\n\n-Brokens              4.50% max\n\n-Small Brokens   0.50% max\n\n-Small Brokens C1            0.10% max\n\n-Red kernels and or undermilled kernels 0% max\n\n-Yellow kernels   0.20% max\n\n-Chal",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-white-rice-100-sortexed.webp"
+    },
+    {
+      "id": 2725,
+      "title": "Thai Glutinous Rice 25% Broken",
+      "slug": "thai-glutinous-rice-25-broken",
+      "excerpt": "Chemical Specifications:\n\nMoisture Content: Typically maintained at levels not exceeding 14% to ensure optimal storage and quality retention.\n\nPurity: Rigorous quality checks to ensure absence of impurities, stones, and foreign matter.\n\nGrain Size: Medium, consistent size grains with a uniform appea",
+      "description": "Specification\n\n-Long grain class 1            –\n\n-Long grain class 2            –\n\n-Long grain class 3            –\n\n-Short grain         –\n\n-Whole kernels  40.00% min\n\n-Brokens&amp;-Small Brokens              28.00% max\n\n-Small Brokens C1            2.00% max\n\n-Red kernels and or undermilled kernels 6.00% max\n\n-Yellow kernels   4.00% max\n\n-Chalky Kernels  –\n\n-Damaged kernels             2.00% max\n\n-White glutinous rice       15.00% max\n\n-Undeveloped, immature kernels, other seeds and foreign matter either singly or combined           3.00% max\n\n-Black kernels     –\n\n-Partly black kernels and peck kernels combined –\n\n(of which partly black kernels)     –\n\n-Paddy (grains per 1 kg) 20 grains max\n\n-Moisture            14.00% max\n\n-Milling degree  Ordinarily Milled",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-glutinous-rice-25-broken.png"
+    },
+    {
+      "id": 2734,
+      "title": "Parboiled Rice 5% Broken",
+      "slug": "parboiled-rice-5-broken",
+      "excerpt": "Specifications of Parboiled Rice 5% Broken\n\nPARBOILED RICE IR- 36/64\n\nBroken (Basis 2/3 of Average Grain Rice Length): 5% Max\n\nMoisture: 14% max\n\nForeign Matter /Damaged / Discolored Grains / Dead Grains / Black Grains Red and Red Streaked Kernels: 1% max\n\nTypical Grain Length of Uncooked Rice is 6m",
+      "description": "Five Percent Broken Parboiled Rice (5% Broken Parboiled Rice)\nWe are moving forward of our competitors for delivering 5% broken Parboiled Long and Medium Grain Rice. Parboiled Rice Thailand is eager to deliver these 5% broken parboiled rice which are treated using advance technologies and as per global industrial ethics.\n\nFive Percent Broken Parboiled Rice is the rich aroma, good taste and high nutritious value brands them the first choice of our esteemed clients. By meaningful the exact demands of our valuable customers and clients, we also offer modified / customized packaging solution.\nPackaging &amp; Delivery Detail\n\nPacking: We Pack Our Product in 50 KG Plastic bags or As Per Customer Requirement\n\n Delivery: Will be finalize within 15-30 Days After Receiving Payment",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/parboiled-rice-5-broken.jpg"
+    },
+    {
+      "id": 2740,
+      "title": "Thai Riceberry Rice",
+      "slug": "thai-riceberry-rice",
+      "excerpt": "Thai Riceberry Rice\nVitamin A equiv.beta-Carotene:  1%63 μg\n\nVitamin E:  5% 0.68 mg\n\nIron:  10% 1.8 mg\n\nMinerals:  Quantity %DV †\n\nZinc:  29% 3.2 mg\nOrigin : Thailand",
+      "description": "",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-riceberry-rice.webp"
+    },
+    {
+      "id": 2741,
+      "title": "Thai Brown Jasmine Rice",
+      "slug": "thai-brown-jasmine-rice",
+      "excerpt": "Variety: Long Grain Rice\nShape : Long\nColour : Brown\nBrand: jasmine\nCultivation Type: Organic\nKind: Aromatic Rice\nStyle: Fresh\nPart: Bran\nCrop Year : Current",
+      "description": "Brown Jasmine Rice\nWhile white jasmine rice is the most common variety, brown jasmine rice has been gaining popularity in recent years. As a health-conscious individual, I’ve found brown jasmine rice to be an excellent alternative that doesn’t compromise on flavor or aroma. Brown jasmine rice retains its outer bran layer, which gives it a nuttier flavor and chewier texture compared to its white counterpart. This bran layer also means this  rice is more nutritious, containing higher levels of fiber, vitamins, and minerals. It’s an excellent choice for those looking to incorporate more whole grains into their diet.\n\nCooking brown jasmine rice requires a slightly different approach than white jasmine rice. It typically needs more water and a longer cooking time to achieve the desired tenderness. However ,  the extra effort is well worth it for the added nutritional benefits and unique flavor profile.",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/thai-brown-jasmine-rice.webp"
+    },
+    {
+      "id": 2743,
+      "title": "RRI 9 Long Grain RiceRRI 9 Long Grain Rice",
+      "slug": "rri-9-long-grain-ricerri-9-long-grain-rice",
+      "excerpt": "Specifications\n\nVariety:  IRRI 9 Long Grain Rice\n\nGrain Length:  6.8 mm (minimum average length)\n\nMoisture Content:  14% max\n\nBroken Grains:  5% max\n\nForeign Matter:  0.5% max\n\nChalky Grains:  5% max\n\nDamaged/Discolored Grains:  2% max\n\nImmature Grains:  1% max\n\nPaddy Grains:  0.2% max\n\nPolishing Gr",
+      "description": "1. Long Grain Excellence:\nOur IRRI 9 Long Grain Rice is celebrated for its long, slender grains that remain separate and fluffy after cooking. This makes it an ideal choice for a variety of culinary applications, from traditional dishes to contemporary cuisine.\n\n2. Aromatic and Flavorful:\nWith its subtle aroma and delicate flavor, IRRI 9 Long Grain Rice adds a unique touch to your meals. Its mild taste complements a wide range of ingredients and spices, making it a versatile staple in any kitchen.\n\n3. Nutritional Benefits:\nRich in essential nutrients, our IRRI 9 Long Grain Rice provides a wholesome addition to your diet. It is a good source of carbohydrates for sustained energy and contains vitamins and minerals that are vital for overall health.\nSpecifications\n\nVariety:  IRRI 9 Long Grain Rice\n\nGrain Length:  6.8 mm (minimum average length)\n\nMoisture Content:  14% max\n\nBroken Grains:  5% max\n\nForeign Matter:  0.5% max\n\nChalky Grains:  5% max\n\nDamaged/Discolored Grains:  2% max\n\nImmature Grains:  1% max\n\nPaddy Grains:  0.2% max\n\nPolishing Grade:  Double polished\n\nCrop Year:  Current\n\nQuality and Sustainability\n1. Superior Quality:\nOur IRRI 9 Long Grain Rice is carefully selected an",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/rri-9-long-grain-ricerri-9-long-grain-rice.png"
+    },
+    {
+      "id": 2745,
+      "title": "IRRI-6 Long Grain RiceIRRI-6 Long Grain Rice",
+      "slug": "irri-6-long-grain-riceirri-6-long-grain-rice",
+      "excerpt": "Specifications\n\nVariety:  IRRI-6 Long Grain Rice\n\nGrain Length:  6.0 mm (minimum average length)\n\nMoisture Content:  14% max\n\nBroken Grains:  5% max\n\nForeign Matter:  0.1% max\n\nChalky Grains:  4% max\n\nDamaged/Discolored Grains:  1% max\n\nImmature Grains:  0.5% max\n\nPaddy Grains:  0.2% max\n\nPolishing ",
+      "description": "Premium IRRI-6 Long Grain Rice by Freem Enterprise Co Ltd\nDiscover the outstanding quality and versatile use of our premium IRRI-6 Long Grain Rice, a staple that brings excellence to every meal.\nProduct Description\n1. Long Grain Excellence:\nOur IRRI-6 Long Grain Rice is renowned for its long, slender grains that remain separate and fluffy after cooking. This makes it an ideal choice for a variety of dishes, from everyday meals to gourmet cuisine.\n\n2. Mild Flavor and Aroma:\nWith its mild taste and subtle aroma, IRRI-6 Long Grain Rice enhances the flavors of your dishes without overpowering other ingredients. Its versatility makes it perfect for a wide range of culinary applications.\n\n3. Nutritional Benefits:\nRich in essential nutrients, our IRRI-6 Long Grain Rice provides a wholesome addition to your diet. It is a good source of carbohydrates for sustained energy and contains essential vitamins and minerals.\n\n4. Versatile Culinary Use:\nIdeal for both traditional and modern recipes, IRRI-6 Long Grain Rice is perfect for pilafs, biryanis, stir-fries, and more. Its consistency and quality make it a favorite in kitchens worldwide.\nSpecifications\n\nVariety:  IRRI-6 Long Grain Rice\n\nGrain ",
+      "categories": [
+        "rice"
+      ],
+      "image": "/images/products/irri-6-long-grain-riceirri-6-long-grain-rice.jpg"
+    },
+    {
+      "id": 2774,
+      "title": "RBDW Sunflower Oil",
+      "slug": "rbdw-sunflower-oil",
+      "excerpt": "Our company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.",
+      "description": "Our company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/rbdw-sunflower-oil.png"
+    },
+    {
+      "id": 2775,
+      "title": "High Oleic Sunflower Oil",
+      "slug": "high-oleic-sunflower-oil",
+      "excerpt": "High Oleic Sunflower Oil is a specially bred form of sunflower oil that is rich in oleic acid, a monounsaturated fat that provides exceptional stability, high heat resistance, and a long shelf life. It offers nutritional benefits by increasing \\\"good\\\" HDL cholesterol without raising \\\"bad\\\" LDL cho",
+      "description": "High Oleic Sunflower Oil is a specially bred form of sunflower oil that is rich in oleic acid, a monounsaturated fat that provides exceptional stability, high heat resistance, and a long shelf life. It offers nutritional benefits by increasing \\\"good\\\" HDL cholesterol without raising \\\"bad\\\" LDL cholesterol and is ideal for high-heat cooking methods like frying, as well as for applications in baking, dressings, and even skincare due to its neutral taste and emollient properties.\n\nKey Characteristics\n\nHigh in Oleic Acid:  \nThe \\\"high oleic\\\" designation means the oil contains a minimum of 75-80% oleic acid, a monounsaturated omega-9 fatty acid.  \n\nHigh Stability:  \nThe high concentration of oleic acid makes the oil significantly more stable and resistant to oxidation compared to conventional sunflower oil.  \n\nHigh Smoke Point:  \nIt can withstand high cooking temperatures, making it suitable for frying and other high-heat applications.  \n\nNeutral Taste:  \nIt has a neutral flavor profile, which allows it to enhance the natural tastes of food without overpowering them.  \n\nTrans-Fat Free:  \nIt provides a trans-fat-free alternative for food manufacturers and consumers.  \n\nNutritional Ben",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/high-oleic-sunflower-oil.png"
+    },
+    {
+      "id": 2781,
+      "title": "RBD Soybean Oil",
+      "slug": "rbd-soybean-oil",
+      "excerpt": "RBD Soybean Oil Home\nRBD Soybean Oil\n\nRBD Soybean Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bott",
+      "description": "RBD Soybean Oil Home\nRBD Soybean Oil\n\nRBD Soybean Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.\n\nReviews\nThere are no reviews yet.\n\nBe the first to review “RBD Soybean Oil” Cancel reply Your email address will not be published. Required fields are marked *\n\nName *\n\nEmail *\n\nSave my name, email, and website in this browser for the next time I comment.\n\nYour rating *\nRate…\nPerfect\nGood\nAverage\nNot that bad\nVery poor\nYour review *\n\nRelated Products\n\nRead more\n\nCooking Oil RBD Corn Oil\n\nRead more\n\nCooking Oil High Oleic Sunflower Oil\n\nRead more\n\nCooking Oil RBD Palm Oil ( 36 – 39 )\n\nRead more\n\nCooking Oil RBD Groundnut / Peanut Oil\n\nRead more\n\nCooking Oil RBD Palm Olein\n\nRead more\n\nCooking Oil Long Life Frying Oil",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/rbd-soybean-oil.png"
+    },
+    {
+      "id": 2783,
+      "title": "RBD Rapeseed / Canola Oil",
+      "slug": "rbd-rapeseed-canola-oil",
+      "excerpt": "RBD Rapeseed / Canola Oil Home\nRBD Rapeseed / Canola Oil\n\nRBD Rapeseed / Canola Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflo",
+      "description": "RBD Rapeseed / Canola Oil Home\nRBD Rapeseed / Canola Oil\n\nRBD Rapeseed / Canola Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.\n\nReviews\nThere are no reviews yet.\n\nBe the first to review “RBD Rapeseed / Canola Oil” Cancel reply Your email address will not be published. Required fields are marked *\n\nName *\n\nEmail *\n\nSave my name, email, and website in this browser for the next time I comment.\n\nYour rating *\nRate…\nPerfect\nGood\nAverage\nNot that bad\nVery poor\nYour review *\n\nRelated Products\n\nRead more\n\nCooking Oil RBD Soybean Oil\n\nRead more\n\nCooking Oil RBD Corn Oil\n\nRead more\n\nCooking Oil High Oleic Sunflower Oil\n\nRead more\n\nCooking Oil RBD Palm Oil ( 36 – 39 )\n\nRead more\n\nCooking Oil RBD Groundnut / Peanut Oil\n\nRead more\n\nCooking Oil RBD Palm Olein",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/rbd-rapeseed-canola-oil.png"
+    },
+    {
+      "id": 2785,
+      "title": "Long Life Frying Oil",
+      "slug": "long-life-frying-oil",
+      "excerpt": "Long Life Frying Oil Home\nLong Life Frying Oil\n\nLong Life Frying Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for bot",
+      "description": "Long Life Frying Oil Home\nLong Life Frying Oil\n\nLong Life Frying Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.\n\nReviews\nThere are no reviews yet.\n\nBe the first to review “Long Life Frying Oil” Cancel reply Your email address will not be published. Required fields are marked *\n\nName *\n\nEmail *\n\nSave my name, email, and website in this browser for the next time I comment.\n\nYour rating *\nRate…\nPerfect\nGood\nAverage\nNot that bad\nVery poor\nYour review *\n\nRelated Products\n\nRead more\n\nCooking Oil RBD Soybean Oil\n\nRead more\n\nCooking Oil RBD Corn Oil\n\nRead more\n\nCooking Oil High Oleic Sunflower Oil\n\nRead more\n\nCooking Oil RBD Palm Oil ( 36 – 39 )\n\nRead more\n\nCooking Oil RBD Groundnut / Peanut Oil\n\nRead more\n\nCooking Oil RBD Palm Olein",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/long-life-frying-oil.png"
+    },
+    {
+      "id": 2787,
+      "title": "RBD Corn Oil",
+      "slug": "rbd-corn-oil",
+      "excerpt": "RBD Corn Oil Home\nRBD Corn Oil\n\nRBD Corn Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We r",
+      "description": "RBD Corn Oil Home\nRBD Corn Oil\n\nRBD Corn Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.\n\nReviews\nThere are no reviews yet.\n\nBe the first to review “RBD Corn Oil” Cancel reply Your email address will not be published. Required fields are marked *\n\nName *\n\nEmail *\n\nSave my name, email, and website in this browser for the next time I comment.\n\nYour rating *\nRate…\nPerfect\nGood\nAverage\nNot that bad\nVery poor\nYour review *\n\nRelated Products\n\nRead more\n\nCooking Oil RBD Soybean Oil\n\nRead more\n\nCooking Oil RBD Rapeseed / Canola Oil\n\nRead more\n\nCooking Oil RBDW Sunflower Oil\n\nRead more\n\nCooking Oil RBD Groundnut / Peanut Oil\n\nRead more\n\nCooking Oil RBD Palm Olein\n\nRead more\n\nCooking Oil Long Life Frying Oil",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/rbd-corn-oil.png"
+    },
+    {
+      "id": 2789,
+      "title": "RBD Groundnut / Peanut Oil",
+      "slug": "rbd-groundnut-peanut-oil",
+      "excerpt": "RBD Groundnut / Peanut Oil Home\nRBD Groundnut / Peanut Oil\n\nRBD Groundnut / Peanut Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sun",
+      "description": "RBD Groundnut / Peanut Oil Home\nRBD Groundnut / Peanut Oil\n\nRBD Groundnut / Peanut Oil\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.\n\nReviews\nThere are no reviews yet.\n\nBe the first to review “RBD Groundnut / Peanut Oil” Cancel reply Your email address will not be published. Required fields are marked *\n\nName *\n\nEmail *\n\nSave my name, email, and website in this browser for the next time I comment.\n\nYour rating *\nRate…\nPerfect\nGood\nAverage\nNot that bad\nVery poor\nYour review *\n\nRelated Products\n\nRead more\n\nCooking Oil RBD Soybean Oil\n\nRead more\n\nCooking Oil RBDW Sunflower Oil\n\nRead more\n\nCooking Oil RBD Corn Oil\n\nRead more\n\nCooking Oil RBD Palm Oil ( 36 – 39 )\n\nRead more\n\nCooking Oil RBD Palm Olein\n\nRead more\n\nCooking Oil Long Life Frying Oil",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/rbd-groundnut-peanut-oil.png"
+    },
+    {
+      "id": 2791,
+      "title": "RBD Palm Oil ( 36 – 39 )",
+      "slug": "rbd-palm-oil-36-39",
+      "excerpt": "RBD Palm Oil ( 36 – 39 ) Home\nRBD Palm Oil ( 36 – 39 )\n\nRBD Palm Oil ( 36 – 39 )\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower",
+      "description": "RBD Palm Oil ( 36 – 39 ) Home\nRBD Palm Oil ( 36 – 39 )\n\nRBD Palm Oil ( 36 – 39 )\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.\n\nReviews\nThere are no reviews yet.\n\nBe the first to review “RBD Palm Oil ( 36 – 39 )” Cancel reply Your email address will not be published. Required fields are marked *\n\nName *\n\nEmail *\n\nSave my name, email, and website in this browser for the next time I comment.\n\nYour rating *\nRate…\nPerfect\nGood\nAverage\nNot that bad\nVery poor\nYour review *\n\nRelated Products\n\nRead more\n\nCooking Oil RBD Rapeseed / Canola Oil\n\nRead more\n\nCooking Oil RBD Corn Oil\n\nRead more\n\nCooking Oil High Oleic Sunflower Oil\n\nRead more\n\nCooking Oil RBD Groundnut / Peanut Oil\n\nRead more\n\nCooking Oil RBD Palm Olein\n\nRead more\n\nCooking Oil Long Life Frying Oil",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/rbd-palm-oil-36-39.png"
+    },
+    {
+      "id": 2793,
+      "title": "RBD Palm Olein",
+      "slug": "rbd-palm-olein",
+      "excerpt": "RBD Palm Olein Home\nRBD Palm Olein\n\nRBD Palm Olein\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles",
+      "description": "RBD Palm Olein Home\nRBD Palm Olein\n\nRBD Palm Olein\n\n0 out of 5 based on 0 customer ratings\n\n(0 customer reviews)\n\nProduct Meta\n\nCategory: Cooking Oil\n\nDescription\n\nReviews (0)\n\nProduct Description\nOur company is a major global supplier of refined and unrefined sunflower oil for both bulk and bottles. We regularly provide only premium, pure sunflower oil free of the addition of any other vegetable oils. We provide the best wholesale prices on sunflower oil.\n\nReviews\nThere are no reviews yet.\n\nBe the first to review “RBD Palm Olein” Cancel reply Your email address will not be published. Required fields are marked *\n\nName *\n\nEmail *\n\nSave my name, email, and website in this browser for the next time I comment.\n\nYour rating *\nRate…\nPerfect\nGood\nAverage\nNot that bad\nVery poor\nYour review *\n\nRelated Products\n\nRead more\n\nCooking Oil RBD Soybean Oil\n\nRead more\n\nCooking Oil RBD Rapeseed / Canola Oil\n\nRead more\n\nCooking Oil RBDW Sunflower Oil\n\nRead more\n\nCooking Oil High Oleic Sunflower Oil\n\nRead more\n\nCooking Oil RBD Palm Oil ( 36 – 39 )\n\nRead more\n\nCooking Oil RBD Groundnut / Peanut Oil",
+      "categories": [
+        "edible-cooking-oil"
+      ],
+      "image": "/images/products/rbd-palm-olein.png"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "We've been importing NPK fertilizers from FREEM CO LTD for two years now, and the results on our crops have been outstanding. Their consistency and professionalism are unmatched.",
+      "author": "Thabo Mokoena",
+      "role": "Fertilizer Importer — South Africa"
+    },
+    {
+      "quote": "The quality of the ICUMSA 45 sugar from FREEM exceeded our expectations. Clean, well-processed, and perfect for our confectionery production.",
+      "author": "Luis Andrade",
+      "role": "Sugar Distributor — Brazil"
+    },
+    {
+      "quote": "Dealing with FREEM was seamless. All export documentation was properly handled, and our shipment cleared customs smoothly. Highly recommended for international buyers.",
+      "author": "Rashid Al Mansoori",
+      "role": "Export Logistics — United Arab Emirates"
+    },
+    {
+      "quote": "Excellent customer support! From the first inquiry to delivery, the FREEM team was responsive and helpful. They even customized our rice packaging for local branding.",
+      "author": "Tran Minh Phuc",
+      "role": "Customer Service — Vietnam"
+    }
+  ]
+}
