@@ -42,8 +42,12 @@ export default function ContactPage() {
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <MapPin className="h-6 w-6 text-brand-600" />
-            <h2 className="mt-3 font-semibold">Thailand</h2>
-            <p className="mt-1 text-slate-600">Export operations based in Thailand, serving global markets.</p>
+            <h2 className="mt-3 font-semibold">Address</h2>
+            <p className="mt-1 text-slate-600">
+              {site.address}
+              <br />
+              Thailand
+            </p>
           </div>
           <Link href="/request-a-quote" className="inline-block rounded-lg bg-brand-600 px-5 py-3 text-sm font-semibold text-white hover:bg-brand-700">
             Request a Quote

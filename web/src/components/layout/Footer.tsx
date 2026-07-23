@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { brandAssets } from "@/config/assets";
 import { getCategories, getSite } from "@/lib/content";
 
@@ -53,6 +53,10 @@ export function Footer() {
         <div>
           <h4 className="font-semibold text-white">Contact Us</h4>
           <ul className="mt-4 space-y-3 text-sm">
+            <li className="flex items-start gap-2">
+              <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
+              <span>{site.address}, Thailand</span>
+            </li>
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 shrink-0" />
               <a href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a>

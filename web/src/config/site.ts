@@ -427,6 +427,7 @@ export const infoPages: Record<string, InfoPage> = {
           "Request a copy of data we hold about you",
           "Ask us to correct inaccurate information",
           "Unsubscribe from newsletters via email reply",
+          "Postal address: 378 Thanon Chatchai, Amphur, Mueang Lampang District, Lampang 52100, Thailand",
           "Contact: sales@fremcoltd.com for all privacy enquiries",
         ],
       },

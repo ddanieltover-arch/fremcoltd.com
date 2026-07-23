@@ -161,6 +161,7 @@ const content = {
     phone: "(+66) 80 854 5975",
     whatsapp: "+66808545975",
     email: "sales@fremcoltd.com",
+    address: "378 Thanon Chatchai, Amphur, Mueang Lampang District, Lampang 52100",
   },
   stats: {
     pages: pages.length,

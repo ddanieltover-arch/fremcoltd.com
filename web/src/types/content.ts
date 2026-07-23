@@ -5,6 +5,7 @@ export interface SiteInfo {
   phone: string;
   whatsapp: string;
   email: string;
+  address: string;
 }
 
 export interface PageContent {
