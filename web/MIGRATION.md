@@ -77,8 +77,9 @@ node scripts/extract-content.mjs
 | Business Alignment | 90 |
 
 ### Remaining items
-- [ ] Wire Resend for email delivery on forms
+- [x] Wire Resend for email delivery on forms (verified live 2026-08-03; harden admin-first + `/api/email-health`)
 - [x] Import product images from live site (`npm run download-images`)
 - [x] Brand assets: logo, favicon, OG image, hero slider, category banners (`npm run download-brand`)
 - [x] Client-side product search (`/search` with category filter)
 - [ ] Connect Stripe if e-commerce checkout is needed later
+- [ ] Confirm Vercel `EMAIL_FROM` uses verified `fremcoltd.com` (not `onboarding@resend.dev`) via `/api/email-health`

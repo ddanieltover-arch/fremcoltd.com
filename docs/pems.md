@@ -4,7 +4,7 @@
 
 **PEMS Version:** 1.0  
 **Last Updated:** 2026-08-03  
-**Updated By:** Master Technical Director (Pulse Software Studio)
+**Updated By:** Senior Full Stack Engineer (Resend production verification)
 
 ---
 
@@ -20,10 +20,10 @@
 | Architecture (one line) | Static-content Next.js App Router monolith under `web/`; Server Actions + Resend for lead capture; no database |
 | Tech stack (one line) | Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 · Zod · React Hook Form · Resend · Vercel |
 | Design system | Project-local brand tokens in `globals.css` (blue brand scale); Inter; Lucide icons; custom motion utilities |
-| Primary risks | Resend/env not verified in prod; no automated tests/CI; content still carries raw WP shortcodes in JSON excerpts; GA unused |
-| Open decisions | Confirm Resend domain verification + live form delivery; whether Stripe/e-commerce is ever needed; analytics provider |
-| Recent changes | Lampang office address; Energy Drinks category + Red Bull + gallery; Vercel `web/` root fix; WP backup removed from git |
-| Next priorities | Verify email delivery in production; clean residual WP shortcode content; add minimal CI + smoke tests; optional GA |
+| Primary risks | Confirm `EMAIL_FROM` is verified domain via `/api/email-health` after deploy; no automated tests/CI; WP shortcodes in JSON; GA unused |
+| Open decisions | Whether Stripe/e-commerce is ever needed; analytics provider; Vercel project access for Pulse (fremcoltd not on Dime Industries team) |
+| Recent changes | Live Resend probe: contact/quote/newsletter succeed; hardened admin-first send + email-health + reserved-domain validation |
+| Next priorities | Deploy email hardenings; confirm `/api/email-health` returns ok; clean WP shortcodes; add CI + smoke tests |
 
 ---
 
@@ -130,6 +130,8 @@
 
 | Date | Decision | Reasoning | Alternatives considered | Impact |
 |---|---|---|---|---|
+| 2026-08-03 | Admin-first Resend send; user confirmation best-effort | Lead capture must not fail when confirmation to user is rejected | Keep all-or-nothing Promise.all | Fewer false form errors; sales always gets successful admin sends |
+| 2026-08-03 | Add `/api/email-health` readiness endpoint | Verify production env without exposing secrets | Vercel dashboard only | Ops can confirm `ok: true` after deploy |
 | 2026 (initial) | Migrate WP/WooCommerce → Next.js App Router | Remove plugin/hosting debt; improve performance and maintainability | Keep WordPress; headless WP | Full rewrite in `web/` |
 | 2026 (initial) | Static JSON catalog from SQL extract | Catalog is relatively stable; avoids CMS cost | Sanity/Contentful; keep WP REST | Scripts in `scripts/`; content in `site-content.json` |
 | 2026 (initial) | Quote/contact forms instead of e-commerce checkout | B2B wholesale via TT/LC, not cart checkout | Stripe/WooCommerce | Redirects `/cart`, `/checkout`, `/my-account` → `/request-a-quote` |
@@ -157,10 +159,10 @@
 
 | Field | Value |
 |---|---|
-| Current sprint / milestone | Production readiness / maintain — confirm email & DNS; content hygiene |
-| Open tasks | Verify Resend domain + Vercel env; wire or remove GA stub; scrub WP shortcodes from JSON page excerpts if still surfaceable; formal a11y pass; add CI build |
-| Blocked tasks | None known (email blocked only if keys/domain missing in prod) |
-| Technical debt (active) | MIGRATION.md version drift (says Next 15); leftover create-next-app README in `web/`; unused default SVGs in `public/`; no tests; Inter vs brand typography; remote WP image pattern still enabled |
+| Current sprint / milestone | Production readiness — Resend verified live; deploy email hardenings |
+| Open tasks | Deploy email-health + admin-first send; confirm Vercel `EMAIL_FROM` via `/api/email-health`; scrub WP shortcodes; CI |
+| Blocked tasks | Pulse CLI lacks access to fremcoltd Vercel project (only `dime-industries` visible under Dime Industries team) — env changes need client/account owner |
+| Technical debt (active) | MIGRATION.md version drift (says Next 15); leftover create-next-app README in `web/`; unused default SVGs in `public/`; no tests; Inter vs brand typography; remote WP image pattern still enabled; probe script action IDs change each deploy |
 
 ---
 
@@ -170,9 +172,10 @@
 |---|---|---|
 | Components | `web/src/components/**` | Layout (Header, Footer, Logo, PageBanner, InfoPageLayout, FloatingActions); products; forms; sections; motion; search |
 | Hooks | — | No shared hooks folder yet |
-| Services / utilities | `web/src/lib/content.ts`, `search.ts`, `text.ts`, `utils.ts` (`cn`), `lib/email/**`, `lib/validations/forms.ts`, `lib/metadata.ts` | Content accessors are the primary data API |
+| Services / utilities | `web/src/lib/content.ts`, `search.ts`, `text.ts`, `utils.ts` (`cn`), `lib/email/**`, `lib/validations/forms.ts`, `lib/metadata.ts` | Content accessors are the primary data API; email: admin-first Resend send |
 | Config | `web/src/config/site.ts`, `assets.ts` | Nav, category meta, info page copy, brand/hero/facility assets |
-| Templates / scripts | `scripts/extract-content.mjs`, `download-product-images.mjs`, `download-brand-assets.mjs` | Re-run from `web` via npm scripts |
+| Templates / scripts | `scripts/extract-content.mjs`, `download-product-images.mjs`, `download-brand-assets.mjs`, `probe-resend-production.mjs` | Re-run extract from `web` via npm scripts; probe IDs change each deploy |
+| Health | `GET /api/email-health` | Non-secret Resend readiness (`ok`, `usingOnboardingFrom`) |
 | Types | `web/src/types/content.ts` | SiteContent model |
 | Brand images | `web/public/images/**`, `og-image.png`, icons | ~92 files under `public/images` |
 
@@ -182,7 +185,9 @@
 
 | Risk | Category | Severity | Mitigation | Status |
 |---|---|---|---|---|
-| Resend not configured or domain unverified → forms fail in production | Business / Security | Critical | Set Vercel envs from `.env.example`; verify `fremcoltd.com` in Resend; smoke-test contact + quote | Open |
+| Resend not configured or domain unverified → forms fail in production | Business / Security | Critical | Live probe 2026-08-03: contact/quote/newsletter succeeded with real domains; check `/api/email-health` after deploy | Mitigated |
+| User confirmation failure discarded lead (all-or-nothing send) | Business | High | Admin-first send; confirmation best-effort | Mitigated (pending deploy) |
+| Reserved/test email domains (e.g. example.com) confuse users | Technical | Medium | Zod blocks reserved domains client/server | Mitigated (pending deploy) |
 | No automated tests or CI → regressions ship unnoticed | Technical | High | Add `npm run build` (+ lint) on PR; later Playwright smoke for home/product/form | Open |
 | Residual WP shortcode noise in `site-content.json` page excerpts | Technical / Business | Medium | Re-extract with cleaner parser or hand-curate pages (info pages already authored in `site.ts`) | Open |
 | SEO regression if Vercel root mis-set | Business | High | Document Root Directory=`web`; root `vercel.json` builds `web/package.json` | Mitigated |
@@ -191,6 +196,7 @@
 | Remote WP upload images as dependency | Performance / Reliability | Low–Medium | Prefer local `/images` assets; tighten `remotePatterns` when unused | Open |
 | Optional Stripe called out but unused | Business | Low | Do not build until client requests retail checkout | Accepted |
 | Analytics env unused | Business | Low | Wire GA/Plausible or remove env stub | Open |
+| Pulse lacks Vercel project link for fremcoltd | Operational | Medium | Link/share correct Vercel team or have owner confirm envs | Open |
 
 ---
 
@@ -198,7 +204,7 @@
 
 | Idea | Area | Priority | Notes |
 |---|---|---|---|
-| Production email end-to-end verification | Security / Business | High | Contact, quote, newsletter |
+| Confirm `/api/email-health` ok after deploy | Security / Business | High | Expect `usingOnboardingFrom: false` |
 | Minimal CI (lint + build) | Architecture | High | GitHub Actions or Vercel checks |
 | Content hygiene (strip WP shortcodes; refresh product copy) | Architecture | Medium | Especially raw page excerpts in JSON |
 | Formal WCAG 2.2 AA audit | A11y | Medium | Hero/carousel/forms focus |
@@ -228,7 +234,7 @@ Update this record when any of the following change:
 - [x] Architecture — initial discovery recorded 2026-08-03
 - [x] Technology / major dependencies — Next 16 / React 19 / Tailwind 4 / Resend documented
 - [x] Design system — brand tokens documented
-- [ ] Security model — revisit after Resend/rate-limit changes
+- [x] Security model — Resend live verified; admin-first + email-health 2026-08-03
 - [x] Deployment / hosting — Vercel `web/` root documented
 - [ ] Significant feature completed
-- [x] Major technical decision made — static JSON + quote flow + WP removal logged
+- [x] Major technical decision made — static JSON + quote flow + WP removal + admin-first email logged
