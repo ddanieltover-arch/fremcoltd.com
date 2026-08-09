@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
 import { FacilitiesSection } from "@/components/sections/FacilitiesSection";
 import { brandAssets, facilityImages } from "@/config/assets";
 import { createPageMetadata } from "@/lib/metadata";

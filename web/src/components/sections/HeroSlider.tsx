@@ -11,7 +11,6 @@ const SLIDE_DURATION_MS = 10000;
 
 export function HeroSlider() {
   const [index, setIndex] = useState(0);
-  const [textVisible, setTextVisible] = useState(false);
   const isLastSlide = index === heroSlides.length - 1;
 
   useEffect(() => {
@@ -20,13 +19,6 @@ export function HeroSlider() {
     }, SLIDE_DURATION_MS);
     return () => clearInterval(timer);
   }, []);
-
-  useEffect(() => {
-    setTextVisible(false);
-    if (!isLastSlide) return;
-    const timer = setTimeout(() => setTextVisible(true), 200);
-    return () => clearTimeout(timer);
-  }, [index, isLastSlide]);
 
   return (
     <section className="relative h-[420px] overflow-hidden bg-brand-950 md:h-[520px]">
@@ -62,12 +54,7 @@ export function HeroSlider() {
 
       {isLastSlide && (
         <div className="pointer-events-none relative z-20 mx-auto flex h-full max-w-7xl items-end px-4 pb-14">
-          <div
-            className={cn(
-              "max-w-xl text-white transition-all duration-700",
-              textVisible ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
-            )}
-          >
+          <div key={index} className="max-w-xl animate-slide-up text-white">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-200">About Our Company</p>
             <h1 className="mt-3 text-3xl font-bold leading-tight md:text-5xl">FREEM ENTERPRISE CO., LTD</h1>
             <p className="mt-4 text-base text-slate-200 md:text-lg">

@@ -69,7 +69,12 @@ export function getFeaturedProducts(limit = 8) {
 }
 
 export function getPage(slug: string): PageContent | undefined {
-  return content.pages.find((p) => p.slug === slug);
+  const page = content.pages.find((p) => p.slug === slug);
+  if (!page) return undefined;
+  return {
+    ...page,
+    excerpt: normalizePlainText(page.excerpt),
+  };
 }
 
 export function getTestimonials() {

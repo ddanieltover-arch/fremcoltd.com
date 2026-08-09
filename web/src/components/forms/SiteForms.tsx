@@ -3,16 +3,28 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { submitContactForm, submitQuoteForm, subscribeNewsletter } from "@/actions/forms";
+import { HoneypotField } from "@/components/forms/FormSecurity";
 import {
   contactSchema,
   newsletterSchema,
   quoteSchema,
-  type ContactFormData,
-  type NewsletterFormData,
-  type QuoteFormData,
 } from "@/lib/validations/forms";
 import { cn } from "@/lib/utils";
+
+const abuseFields = {
+  website: z.string().optional(),
+  formStartedAt: z.number().optional(),
+};
+
+const contactFormSchema = contactSchema.extend(abuseFields);
+const quoteFormSchema = quoteSchema.extend(abuseFields);
+const newsletterFormSchema = newsletterSchema.extend(abuseFields);
+
+type ContactFormInput = z.infer<typeof contactFormSchema>;
+type QuoteFormInput = z.infer<typeof quoteFormSchema>;
+type NewsletterFormInput = z.infer<typeof newsletterFormSchema>;
 
 function Field({
   label,
@@ -39,11 +51,15 @@ export function ContactForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const form = useForm<ContactFormData>({ resolver: zodResolver(contactSchema) });
+  const [formStartedAt] = useState(() => Date.now());
+  const form = useForm<ContactFormInput>({
+    resolver: zodResolver(contactFormSchema),
+    defaultValues: { website: "", formStartedAt },
+  });
 
   return (
     <form
-      className="space-y-4"
+      className="relative space-y-4"
       onSubmit={form.handleSubmit(async (data) => {
         setIsSubmitting(true);
         setStatus("idle");
@@ -52,13 +68,15 @@ export function ContactForm() {
         setIsSubmitting(false);
         if ("success" in result) {
           setStatus("success");
-          form.reset();
+          form.reset({ website: "", formStartedAt });
           return;
         }
         setStatus("error");
         setErrorMessage(result.error);
       })}
     >
+      <HoneypotField register={form.register} />
+      <input type="hidden" {...form.register("formStartedAt", { valueAsNumber: true })} />
       <div className="grid gap-4 md:grid-cols-2">
         <Field label="Name *" error={form.formState.errors.name?.message}>
           <input {...form.register("name")} className={inputClass} />
@@ -99,11 +117,15 @@ export function QuoteForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const form = useForm<QuoteFormData>({ resolver: zodResolver(quoteSchema) });
+  const [formStartedAt] = useState(() => Date.now());
+  const form = useForm<QuoteFormInput>({
+    resolver: zodResolver(quoteFormSchema),
+    defaultValues: { website: "", productCategory: "sugar", formStartedAt },
+  });
 
   return (
     <form
-      className="space-y-4"
+      className="relative space-y-4"
       onSubmit={form.handleSubmit(async (data) => {
         setIsSubmitting(true);
         setStatus("idle");
@@ -112,13 +134,15 @@ export function QuoteForm() {
         setIsSubmitting(false);
         if ("success" in result) {
           setStatus("success");
-          form.reset();
+          form.reset({ website: "", productCategory: "sugar", formStartedAt });
           return;
         }
         setStatus("error");
         setErrorMessage(result.error);
       })}
     >
+      <HoneypotField register={form.register} />
+      <input type="hidden" {...form.register("formStartedAt", { valueAsNumber: true })} />
       <div className="grid gap-4 md:grid-cols-2">
         <Field label="Full Name *" error={form.formState.errors.name?.message}>
           <input {...form.register("name")} className={inputClass} />
@@ -174,11 +198,15 @@ export function NewsletterForm({ className }: { className?: string }) {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const form = useForm<NewsletterFormData>({ resolver: zodResolver(newsletterSchema) });
+  const [formStartedAt] = useState(() => Date.now());
+  const form = useForm<NewsletterFormInput>({
+    resolver: zodResolver(newsletterFormSchema),
+    defaultValues: { website: "", formStartedAt },
+  });
 
   return (
     <form
-      className={cn("flex flex-col gap-3 sm:flex-row sm:flex-wrap", className)}
+      className={cn("relative flex flex-col gap-3 sm:flex-row sm:flex-wrap", className)}
       onSubmit={form.handleSubmit(async (data) => {
         setIsSubmitting(true);
         setStatus("idle");
@@ -187,14 +215,21 @@ export function NewsletterForm({ className }: { className?: string }) {
         setIsSubmitting(false);
         if ("success" in result) {
           setStatus("success");
-          form.reset();
+          form.reset({ website: "", formStartedAt });
           return;
         }
         setStatus("error");
         setErrorMessage(result.error);
       })}
     >
-      <input type="email" placeholder="Your email" {...form.register("email")} className={cn(inputClass, "sm:flex-1")} />
+      <HoneypotField register={form.register} />
+      <input type="hidden" {...form.register("formStartedAt", { valueAsNumber: true })} />
+      <input
+        type="email"
+        placeholder="Your email"
+        {...form.register("email")}
+        className={cn(inputClass, "sm:flex-1")}
+      />
       <button
         type="submit"
         disabled={isSubmitting}

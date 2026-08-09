@@ -11,9 +11,45 @@ function unescape(str) {
   return str.replace(/\\'/g, "'").replace(/''/g, "'");
 }
 
+const SHORTCODE_TAG = /\[[/]?[a-zA-Z_][\w-]*(?:\s[^[\]]*?)?\]/g;
+
+const HTML_ENTITIES = {
+  nbsp: " ",
+  amp: "&",
+  lt: "<",
+  gt: ">",
+  quot: '"',
+  apos: "'",
+  rsquo: "\u2019",
+  lsquo: "\u2018",
+  rdquo: "\u201D",
+  ldquo: "\u201C",
+  mdash: "\u2014",
+  ndash: "\u2013",
+  hellip: "\u2026",
+};
+
+function stripWordPressShortcodes(text) {
+  if (!text) return "";
+  let result = text.replace(/\\"/g, '"').replace(/\\'/g, "'");
+  let previous = "";
+  while (result !== previous) {
+    previous = result;
+    result = result.replace(SHORTCODE_TAG, " ");
+  }
+  return result.replace(/\[[^\]]*$/g, " ").replace(/^\s*[^\[]*\]/g, " ");
+}
+
+function decodeBasicHtmlEntities(text) {
+  return text
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => String.fromCharCode(parseInt(hex, 16)))
+    .replace(/&([a-z]+);/gi, (match, name) => HTML_ENTITIES[name.toLowerCase()] ?? match);
+}
+
 function normalizePlainText(text) {
   if (!text) return "";
-  return text
+  return decodeBasicHtmlEntities(stripWordPressShortcodes(text))
     .replace(/\\r\\n/g, "\n")
     .replace(/\\n/g, "\n")
     .replace(/\\r/g, "\n")

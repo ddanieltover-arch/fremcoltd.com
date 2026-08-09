@@ -13,6 +13,20 @@
   --brand-800: #0d3654;
   --brand-900: #0a2a42;
   --brand-950: #061a29;
+
+  /* Admin semantic tokens (Pulse B2B kit) */
+  --brand-color-primary: var(--brand-500);
+  --brand-color-primary-hover: var(--brand-600);
+  --brand-color-secondary: var(--brand-400);
+  --brand-color-bg: var(--brand-50);
+  --brand-color-surface: #ffffff;
+  --brand-color-text: var(--foreground);
+  --brand-color-text-muted: #64748b;
+  --brand-color-border: var(--brand-200);
+  --brand-color-error: #b42318;
+  --brand-color-success: #1f7a4c;
+  --brand-radius-md: 0.5rem;
+  --brand-container: 75rem;
 }
 
 @theme inline {
@@ -28,7 +42,18 @@
   --color-brand-800: var(--brand-800);
   --color-brand-900: var(--brand-900);
   --color-brand-950: var(--brand-950);
+  --color-brand-primary: var(--brand-color-primary);
+  --color-brand-primary-hover: var(--brand-color-primary-hover);
+  --color-brand-secondary: var(--brand-color-secondary);
+  --color-brand-bg: var(--brand-color-bg);
+  --color-brand-surface: var(--brand-color-surface);
+  --color-brand-text: var(--brand-color-text);
+  --color-brand-muted: var(--brand-color-text-muted);
+  --color-brand-border: var(--brand-color-border);
+  --color-brand-error: var(--brand-color-error);
+  --color-brand-success: var(--brand-color-success);
   --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-inter), system-ui, sans-serif;
   --animate-ken-burns: ken-burns 12s ease-out forwards;
   --animate-hero-progress: hero-progress 10s linear forwards;
   --animate-float: float 6s ease-in-out infinite;

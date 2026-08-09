@@ -81,5 +81,9 @@ node scripts/extract-content.mjs
 - [x] Import product images from live site (`npm run download-images`)
 - [x] Brand assets: logo, favicon, OG image, hero slider, category banners (`npm run download-brand`)
 - [x] Client-side product search (`/search` with category filter)
+- [x] Strip residual WordPress/Flatsome shortcodes from catalog JSON + extract/runtime text pipeline
+- [x] Minimal CI: GitHub Actions lint + build on PRs / `main`
+- [x] Form honeypot + rate limiting (contact / quote / newsletter)
+- [x] Playwright smoke tests (home / product / quote submit) in CI
 - [ ] Connect Stripe if e-commerce checkout is needed later
 - [ ] Confirm Vercel `EMAIL_FROM` uses verified `fremcoltd.com` (not `onboarding@resend.dev`) via `/api/email-health`

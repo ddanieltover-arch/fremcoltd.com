@@ -1,0 +1,161 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum AdminRole {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+  SALES_MANAGER
+  READ_ONLY
+}
+
+enum PublishStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum QuoteStatus {
+  NEW
+  IN_PROGRESS
+  AWAITING_INFO
+  QUOTED
+  CLOSED
+  SPAM
+  ARCHIVED
+}
+
+enum InquiryStatus {
+  NEW
+  IN_PROGRESS
+  CLOSED
+  SPAM
+  ARCHIVED
+}
+
+enum InquirySource {
+  INQUIRY
+  CONTACT
+  AI_ESCALATION
+}
+
+enum Incoterm {
+  FOB
+  CIF
+  EXW
+  CNF
+  OTHER
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  name         String
+  role         AdminRole @default(ADMIN)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  slug      String    @unique
+  name      String
+  sortOrder Int       @default(0)
+  products  Product[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+}
+
+model Product {
+  id               String                 @id @default(cuid())
+  categoryId       String
+  category         Category               @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  slug             String                 @unique
+  name             String
+  shortDescription String                 @default("")
+  description      String                 @default("")
+  originCountry    String?
+  status           PublishStatus          @default(DRAFT)
+  publishedAt      DateTime?
+  specifications   ProductSpecification[]
+  packaging        ProductPackaging[]
+  images           ProductImage[]
+  quotes           QuoteRequest[]
+  createdAt        DateTime               @default(now())
+  updatedAt        DateTime               @updatedAt
+}
+
+model ProductSpecification {
+  id        String  @id @default(cuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  label     String
+  value     String
+  unit      String?
+  sortOrder Int     @default(0)
+}
+
+model ProductPackaging {
+  id        String  @id @default(cuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  name      String
+  sizeLabel String?
+  notes     String?
+  sortOrder Int     @default(0)
+}
+
+model ProductImage {
+  id        String  @id @default(cuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  url       String
+  alt       String  @default("")
+  publicId  String?
+  sortOrder Int     @default(0)
+  isPrimary Boolean @default(false)
+}
+
+model QuoteRequest {
+  id            String      @id @default(cuid())
+  referenceCode String      @unique
+  companyName   String
+  contactName   String
+  email         String
+  phone         String?
+  country       String?
+  productId     String?
+  product       Product?    @relation(fields: [productId], references: [id], onDelete: SetNull)
+  productLabel  String?
+  quantityText  String
+  destination   String
+  incoterm      Incoterm?
+  targetDate    DateTime?
+  message       String?
+  status        QuoteStatus @default(NEW)
+  version       Int         @default(0)
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Inquiry {
+  id          String        @id @default(cuid())
+  companyName String?
+  contactName String
+  email       String
+  phone       String?
+  country     String?
+  message     String
+  source      InquirySource @default(CONTACT)
+  sourcePath  String?
+  status      InquiryStatus @default(NEW)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}

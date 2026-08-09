@@ -29,12 +29,16 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
+  const [navPath, setNavPath] = useState(pathname);
   const headerRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
+  // Reset menus when the route changes (adjust state during render — no effect needed).
+  if (pathname !== navPath) {
+    setNavPath(pathname);
     setMobileOpen(false);
     setOpenDropdown(null);
-  }, [pathname]);
+    setMobileSection(null);
+  }
 
   useEffect(() => {
     function handlePointerDown(event: MouseEvent) {

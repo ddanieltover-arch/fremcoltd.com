@@ -50,6 +50,12 @@ export async function sendAdminAndUserEmails({
   userSubject,
   userHtml,
 }: SendPairOptions): Promise<{ success: true } | { error: string }> {
+  // Local/CI smoke tests only — never set on production Vercel.
+  if (process.env["E2E_BYPASS_EMAIL"] === "1") {
+    console.info("[email] E2E_BYPASS_EMAIL=1 — skipping Resend send");
+    return { success: true };
+  }
+
   const resend = getResend();
 
   if (!resend) {
