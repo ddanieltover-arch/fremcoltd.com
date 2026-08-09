@@ -1,47 +1,64 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState } from "react";
 import { signIn } from "next-auth/react";
-import { useRouter } from "next/navigation";
 
 type LoginFormProps = {
   callbackUrl: string;
 };
 
 export function LoginForm({ callbackUrl }: LoginFormProps) {
-  const router = useRouter();
   const [error, setError] = useState<string | null>(null);
-  const [pending, startTransition] = useTransition();
+  const [pending, setPending] = useState(false);
 
   return (
     <form
       className="space-y-4"
       onSubmit={(event) => {
         event.preventDefault();
+        if (pending) return;
+
         setError(null);
+        setPending(true);
+
         const formData = new FormData(event.currentTarget);
         const email = String(formData.get("email") ?? "").trim().toLowerCase();
         const password = String(formData.get("password") ?? "");
+        const nextUrl = callbackUrl.startsWith("/admin") ? callbackUrl : "/admin";
 
-        startTransition(async () => {
+        void (async () => {
           try {
-            const result = await signIn("credentials", {
-              email,
-              password,
-              redirect: false,
-            });
+            const result = await Promise.race([
+              signIn("credentials", {
+                email,
+                password,
+                redirect: false,
+                callbackUrl: nextUrl,
+              }),
+              new Promise<null>((resolve) => {
+                window.setTimeout(() => resolve(null), 15000);
+              }),
+            ]);
 
-            if (!result || result.error) {
-              setError("Invalid email or password.");
+            if (!result) {
+              setError("Sign-in timed out. Refresh and try again.");
+              setPending(false);
               return;
             }
 
-            router.replace(callbackUrl || "/admin");
-            router.refresh();
+            if (result.error) {
+              setError("Invalid email or password.");
+              setPending(false);
+              return;
+            }
+
+            // Hard navigation so the session cookie is picked up by the proxy gate.
+            window.location.assign(nextUrl);
           } catch {
-            setError("Sign-in failed. Check AUTH_SECRET / DATABASE_URL on the server.");
+            setError("Sign-in failed. Please try again.");
+            setPending(false);
           }
-        });
+        })();
       }}
     >
       <div>
