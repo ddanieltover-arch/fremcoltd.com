@@ -6,10 +6,15 @@ export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const isLogin = pathname === "/admin/login";
 
-  const token = await getToken({
-    req: request,
-    secret: process.env.AUTH_SECRET,
-  });
+  let token = null;
+  try {
+    token = await getToken({
+      req: request,
+      secret: process.env.AUTH_SECRET,
+    });
+  } catch (error) {
+    console.error("[proxy] getToken failed", error);
+  }
 
   if (isLogin) {
     if (token) {
