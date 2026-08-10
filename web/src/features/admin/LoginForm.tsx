@@ -1,11 +1,58 @@
 "use client";
 
 import { useState } from "react";
-import { signIn } from "next-auth/react";
 
 type LoginFormProps = {
   callbackUrl: string;
 };
+
+async function credentialsSignIn(email: string, password: string, callbackUrl: string) {
+  const csrfResponse = await fetch("/api/auth/csrf", { credentials: "include" });
+  if (!csrfResponse.ok) {
+    throw new Error("Could not start sign-in.");
+  }
+
+  const { csrfToken } = (await csrfResponse.json()) as { csrfToken?: string };
+  if (!csrfToken) {
+    throw new Error("Could not start sign-in.");
+  }
+
+  const body = new URLSearchParams({
+    csrfToken,
+    email,
+    password,
+    callbackUrl,
+    json: "true",
+  });
+
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 12000);
+
+  try {
+    const response = await fetch("/api/auth/callback/credentials", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "X-Auth-Return-Redirect": "1",
+      },
+      body,
+      credentials: "include",
+      signal: controller.signal,
+    });
+
+    const data = (await response.json().catch(() => null)) as { url?: string } | null;
+    const errorFromUrl =
+      typeof data?.url === "string" ? new URL(data.url, window.location.origin).searchParams.get("error") : null;
+
+    if (!response.ok || errorFromUrl) {
+      throw new Error("Invalid email or password.");
+    }
+
+    return true;
+  } finally {
+    window.clearTimeout(timeout);
+  }
+}
 
 export function LoginForm({ callbackUrl }: LoginFormProps) {
   const [error, setError] = useState<string | null>(null);
@@ -28,34 +75,16 @@ export function LoginForm({ callbackUrl }: LoginFormProps) {
 
         void (async () => {
           try {
-            const result = await Promise.race([
-              signIn("credentials", {
-                email,
-                password,
-                redirect: false,
-                callbackUrl: nextUrl,
-              }),
-              new Promise<null>((resolve) => {
-                window.setTimeout(() => resolve(null), 15000);
-              }),
-            ]);
-
-            if (!result) {
-              setError("Sign-in timed out. Refresh and try again.");
-              setPending(false);
-              return;
-            }
-
-            if (result.error) {
-              setError("Invalid email or password.");
-              setPending(false);
-              return;
-            }
-
-            // Hard navigation so the session cookie is picked up by the proxy gate.
+            await credentialsSignIn(email, password, nextUrl);
             window.location.assign(nextUrl);
-          } catch {
-            setError("Sign-in failed. Please try again.");
+          } catch (err) {
+            const message =
+              err instanceof Error && err.name === "AbortError"
+                ? "Sign-in timed out. Refresh and try again."
+                : err instanceof Error
+                  ? err.message
+                  : "Sign-in failed. Please try again.";
+            setError(message);
             setPending(false);
           }
         })();
