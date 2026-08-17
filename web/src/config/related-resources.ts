@@ -34,7 +34,7 @@ const SUSTAINABILITY: ResourceLink = {
   anchor: "sustainable sugar sourcing Thailand",
 };
 
-export const outboundByTopic = {
+export const outboundByTopic: Record<string, ResourceLink[]> = {
   sugar: [
     { href: "https://www.icumsa.org/", anchor: "ICUMSA sugar analysis methods" },
     { href: "https://www.fao.org/markets-and-trade/commodities/sugar/en", anchor: "FAO sugar market overview" },
@@ -59,7 +59,7 @@ export const outboundByTopic = {
     { href: "https://iccwbo.org/business-solutions/incoterms-rules/", anchor: "ICC Incoterms rules" },
     { href: "https://www.dft.go.th/en-us", anchor: "Thailand Department of Foreign Trade" },
   ],
-} as const;
+};
 
 const categoryKeyword: Record<string, string> = {
   sugar: "ICUMSA 45 wholesale",
