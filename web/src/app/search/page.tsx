@@ -4,6 +4,8 @@ import { PageBanner } from "@/components/layout/PageBanner";
 import { getProducts } from "@/lib/content";
 import { createPageMetadata } from "@/lib/metadata";
 import type { SearchCategory } from "@/lib/search";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Search Products | FREEM ENTERPRISE CO., LTD",
@@ -41,6 +43,7 @@ export default async function SearchPage({ searchParams }: Props) {
       />
       <div className="mx-auto max-w-7xl px-4 py-12">
         <SearchResults products={products} query={query} category={category} />
+        <RelatedResources resources={staticRelatedResources["/search"]} />
       </div>
     </div>
   );

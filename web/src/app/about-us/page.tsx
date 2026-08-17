@@ -9,6 +9,8 @@ import { createPageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { localBusinessSchema } from "@/lib/structured-data/local-business";
 import { getSite } from "@/lib/content";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "About Us | FREEM ENTERPRISE CO., LTD",
@@ -113,6 +115,9 @@ export default function AboutPage() {
         </div>
 
         <FacilitiesSection showCta={false} />
+        <div className="mx-auto max-w-7xl px-4 pb-12">
+          <RelatedResources resources={staticRelatedResources["/about-us"]} />
+        </div>
       </div>
     </>
   );

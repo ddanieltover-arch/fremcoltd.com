@@ -5,6 +5,8 @@ import { PageBanner } from "@/components/layout/PageBanner";
 import { Reveal, Stagger } from "@/components/motion/Reveal";
 import { getCategories, getProducts } from "@/lib/content";
 import { createPageMetadata } from "@/lib/metadata";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Products | FREEM ENTERPRISE CO., LTD",
@@ -50,6 +52,7 @@ export default function ProductsPage() {
             <ProductCard key={product.id} product={product} />
           ))}
         </Stagger>
+        <RelatedResources resources={staticRelatedResources["/products"]} />
       </div>
     </div>
   );

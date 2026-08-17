@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { AnswerCapsule } from "@/components/seo/AnswerCapsule";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { glossaryTerms } from "@/config/glossary";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { createPageMetadata } from "@/lib/metadata";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Export Glossary — ICUMSA, FOB, CIF & Trade Terms | FREEM ENTERPRISE",
@@ -39,12 +40,7 @@ export default function GlossaryPage() {
           ))}
         </dl>
 
-        <p className="mt-10 text-center text-sm text-slate-500">
-          Need help with a term not listed here?{" "}
-          <Link href="/contact" className="font-semibold text-brand-600 hover:text-brand-700">
-            Contact our export team
-          </Link>
-        </p>
+        <RelatedResources resources={staticRelatedResources["/glossary"]} />
       </div>
     </>
   );

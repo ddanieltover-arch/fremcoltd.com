@@ -7,6 +7,8 @@ import { wholesaleFaq } from "@/config/faq";
 import { faqSchema } from "@/lib/structured-data/faq";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { createPageMetadata } from "@/lib/metadata";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "FAQ — Wholesale Export Questions | FREEM ENTERPRISE CO., LTD",
@@ -54,6 +56,7 @@ export default function FaqPage() {
             </Link>
           </div>
         </div>
+        <RelatedResources resources={staticRelatedResources["/faq"]} />
       </div>
     </>
   );

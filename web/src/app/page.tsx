@@ -11,6 +11,8 @@ import { Reveal, Stagger } from "@/components/motion/Reveal";
 import { categoryMeta } from "@/config/site";
 import { getCategories, getFeaturedProducts, getSite, getTestimonials } from "@/lib/content";
 import { createPageMetadata } from "@/lib/metadata";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Thai Agricultural Commodities Exporter | Sugar, Rice & Fertilizers",
@@ -44,9 +46,23 @@ export default function HomePage() {
           <div id="answer" aria-label="Quick Answer" className="mb-10 rounded-2xl border border-brand-100 bg-brand-50/60 p-6">
             <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">Quick Answer</p>
             <p className="mt-2 leading-relaxed text-slate-700">
-              <strong>FREEM ENTERPRISE CO., LTD</strong> is a Thailand-based agricultural commodity exporter supplying sugar
-              (ICUMSA grades), rice, NPK fertilizers, edible cooking oil, and energy drinks to wholesale buyers worldwide —
-              with FOB/CIF shipping, COA documentation, and container-load export quantities.
+              <strong>FREEM ENTERPRISE CO., LTD</strong> is a Thailand-based agricultural commodity exporter supplying{" "}
+              <Link href="/product-category/sugar" className="font-semibold text-brand-700 hover:text-brand-900">
+                ICUMSA 45 wholesale
+              </Link>
+              ,{" "}
+              <Link href="/product-category/rice" className="font-semibold text-brand-700 hover:text-brand-900">
+                jasmine rice wholesale
+              </Link>
+              ,{" "}
+              <Link href="/product-category/fertilizers" className="font-semibold text-brand-700 hover:text-brand-900">
+                NPK fertilizer supplier Thailand
+              </Link>
+              , and cooking oil — with{" "}
+              <Link href="/guides/fob-vs-cif-agricultural-commodities" className="font-semibold text-brand-700 hover:text-brand-900">
+                FOB vs CIF agricultural commodities
+              </Link>{" "}
+              terms, COA documentation, and container-load export quantities.
             </p>
           </div>
           <div className="mb-10 flex items-end justify-between gap-4">
@@ -112,6 +128,10 @@ export default function HomePage() {
 
       <TestimonialsCarousel items={testimonials} />
       <MissionSection />
+
+      <div className="mx-auto max-w-7xl px-4">
+        <RelatedResources resources={staticRelatedResources["/"]} />
+      </div>
 
       <section className="mx-auto max-w-7xl px-4 py-16">
         <Reveal>

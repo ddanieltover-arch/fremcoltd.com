@@ -1,25 +1,39 @@
-From Page,To Page,Anchor Text,Priority
-/,/product-category/sugar,Thai sugar exporter,High
-/,/product-category/rice,Thailand rice wholesale,High
-/,/product-category/fertilizers,NPK fertilizer supplier,High
-/,/request-a-quote,Request a wholesale quote,High
-/products,/product-category/sugar,Sugar products,High
-/products,/product-category/rice,Rice products,High
-/product-category/sugar,/product/icumsa-45-white-refined-sugar,ICUMSA 45 white refined sugar,High
-/product-category/sugar,/request-a-quote,Request sugar export quote,High
-/product-category/rice,/request-a-quote,Request rice export quote,High
-/product-category/fertilizers,/request-a-quote,Request fertilizer quote,High
-/product/icumsa-45-white-refined-sugar,/product-category/sugar,All sugar products,Medium
-/product/icumsa-45-white-refined-sugar,/quality-control,Quality control standards,Medium
-/product/icumsa-45-white-refined-sugar,/ordering-procedure,Ordering procedure,Medium
-/ordering-procedure,/quality-control,Quality verification process,Medium
-/ordering-procedure,/request-a-quote,Start your order,High
-/quality-control,/sustainability,Sustainable sourcing,Medium
-/faq,/glossary,Export trade terms glossary,Medium
-/faq,/guides,Export guides,Medium
-/glossary,/guides/how-to-import-thai-sugar,How to import Thai sugar,Medium
-/guides,/faq,Wholesale buyer FAQ,Medium
-/about-us,/quality-control,Our quality standards,Medium
-/about-us,/contact,Contact export team,High
-/guides/how-to-import-thai-sugar,/product-category/sugar,Browse sugar catalog,High
-/guides/fob-vs-cif-agricultural-commodities,/ordering-procedure,Export ordering steps,Medium
+From Page,To Page,Anchor Text,Type,Priority
+/,/product-category/sugar,Thai sugar exporter,internal,High
+/,/product-category/rice,Thailand rice exporter,internal,High
+/,/product-category/fertilizers,NPK fertilizer supplier Thailand,internal,High
+/,/product-category/edible-cooking-oil,edible cooking oil exporter Thailand,internal,High
+/,/request-a-quote,CIF sugar supplier quote,internal,High
+/,/guides/how-to-import-thai-sugar,how to import Thai sugar,internal,High
+/,/faq,wholesale buyer FAQ sugar rice,internal,High
+/,https://iccwbo.org/business-solutions/incoterms-rules/,ICC Incoterms rules,outbound,High
+/,https://www.dft.go.th/en-us,Thailand Department of Foreign Trade,outbound,High
+/products,/,agricultural commodities supplier Thailand,internal,High
+/products,/product-category/sugar,Thai sugar exporter,internal,High
+/products,/product-category/rice,jasmine rice wholesale,internal,High
+/products,/product-category/fertilizers,Thai fertilizer exporter,internal,High
+/products,/product-category/edible-cooking-oil,edible cooking oil exporter Thailand,internal,High
+/products,/request-a-quote,wholesale sugar quote,internal,High
+/products,/guides,how to import Thai sugar,internal,High
+/product-category/{slug},/,agricultural commodities supplier Thailand,internal,High
+/product-category/{slug},/products,Thai export product catalog,internal,High
+/product-category/{slug},/product/{featured},category keyword product,internal,High
+/product-category/{slug},/guides/{topic},category guide keyword,internal,High
+/product-category/{slug},/request-a-quote,wholesale quote,internal,High
+/product-category/{slug},/faq,wholesale buyer FAQ sugar rice,internal,High
+/product-category/{slug},/glossary,ICUMSA grades explained,internal,High
+/product/{slug},/,agricultural commodities supplier Thailand,internal,High
+/product/{slug},/product-category/{category},category keyword,internal,High
+/product/{slug},/product/{related},related product title,internal,High
+/product/{slug},/guides/{topic},category guide keyword,internal,High
+/product/{slug},/request-a-quote,CIF sugar supplier / wholesale quote,internal,High
+/product/{slug},/quality-control,sugar export documentation COA,internal,High
+/product/{slug},/faq,wholesale buyer FAQ sugar rice,internal,High
+/about-us,/,agricultural commodities supplier Thailand,internal,High
+/contact,/,agricultural commodities supplier Thailand,internal,High
+/request-a-quote,/,agricultural commodities supplier Thailand,internal,High
+/faq,/,agricultural commodities supplier Thailand,internal,High
+/glossary,/,agricultural commodities supplier Thailand,internal,High
+/guides,/,agricultural commodities supplier Thailand,internal,High
+/guides/{slug},/,agricultural commodities supplier Thailand,internal,High
+/{info-page},/,agricultural commodities supplier Thailand,internal,High

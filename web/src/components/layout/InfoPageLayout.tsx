@@ -26,6 +26,8 @@ import { infoPageHero } from "@/config/assets";
 import type { InfoPageSection, InfoRelatedLink } from "@/config/site";
 import { infoNavItems } from "@/config/site";
 import { cn } from "@/lib/utils";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 interface InfoPageLayoutProps {
   slug: string;
@@ -194,6 +196,7 @@ export function InfoPageLayout({ slug, title, intro, sections, related }: InfoPa
                 </Stagger>
               </div>
             </Reveal>
+            <RelatedResources resources={staticRelatedResources[`/${slug}`] ?? staticRelatedResources["/"]} />
           </div>
         </div>
       </div>

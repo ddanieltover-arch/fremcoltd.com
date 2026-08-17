@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { QuoteForm } from "@/components/forms/SiteForms";
 import { PageBanner } from "@/components/layout/PageBanner";
 import { createPageMetadata } from "@/lib/metadata";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Request a Quote | FREEM ENTERPRISE CO., LTD",
@@ -20,6 +22,7 @@ export default function QuotePage() {
         <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <QuoteForm />
         </div>
+        <RelatedResources resources={staticRelatedResources["/request-a-quote"]} />
       </div>
     </div>
   );

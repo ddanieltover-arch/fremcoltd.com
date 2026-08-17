@@ -6,6 +6,8 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { getAllGuideSlugs, getGuide } from "@/config/guides";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { createPageMetadata } from "@/lib/metadata";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { getGuideRelatedResources } from "@/config/related-resources";
 import { absoluteUrl } from "@/lib/site-url";
 
 interface Props {
@@ -93,12 +95,7 @@ export default async function GuidePage({ params }: Props) {
           </section>
         ))}
 
-        <div className="mt-12 rounded-2xl bg-brand-50 p-6 text-center">
-          <p className="font-semibold text-brand-900">Ready to source from Thailand?</p>
-          <Link href="/request-a-quote" className="mt-4 inline-block rounded-lg bg-brand-600 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-700">
-            Request a Wholesale Quote
-          </Link>
-        </div>
+        <RelatedResources resources={getGuideRelatedResources(slug)} />
       </article>
     </>
   );

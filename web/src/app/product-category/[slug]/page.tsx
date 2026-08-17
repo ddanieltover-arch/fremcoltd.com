@@ -10,6 +10,8 @@ import { getAllCategorySlugs, getCategory, getProductsByCategory } from "@/lib/c
 import { createPageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { itemListSchema } from "@/lib/structured-data/item-list";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { getCategoryRelatedResources } from "@/config/related-resources";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -119,6 +121,7 @@ export default async function CategoryPage({ params }: Props) {
               </div>
             </>
           )}
+          <RelatedResources resources={getCategoryRelatedResources(slug)} />
         </div>
       </div>
     </>

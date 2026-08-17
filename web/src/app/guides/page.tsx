@@ -5,6 +5,8 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { guides } from "@/config/guides";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { createPageMetadata } from "@/lib/metadata";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 
 export const metadata: Metadata = createPageMetadata({
   title: "Export Guides for Wholesale Buyers | FREEM ENTERPRISE CO., LTD",
@@ -37,6 +39,7 @@ export default function GuidesIndexPage() {
             </li>
           ))}
         </ul>
+        <RelatedResources resources={staticRelatedResources["/guides"]} />
       </div>
     </>
   );

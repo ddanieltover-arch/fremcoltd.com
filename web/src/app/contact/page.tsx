@@ -7,6 +7,8 @@ import { getSite } from "@/lib/content";
 import { createPageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { localBusinessSchema } from "@/lib/structured-data/local-business";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { staticRelatedResources } from "@/config/related-resources";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
 export const metadata: Metadata = createPageMetadata({
@@ -71,6 +73,9 @@ export default function ContactPage() {
               <ContactForm />
             </div>
           </div>
+        </div>
+        <div className="mx-auto max-w-7xl px-4 pb-12">
+          <RelatedResources resources={staticRelatedResources["/contact"]} />
         </div>
       </div>
     </>

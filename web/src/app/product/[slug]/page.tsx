@@ -11,6 +11,8 @@ import { getAllProductSlugs, getProduct, getRelatedProducts } from "@/lib/conten
 import { createPageMetadata } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/structured-data/breadcrumb";
 import { productSchema } from "@/lib/structured-data/product";
+import { RelatedResources } from "@/components/seo/RelatedResources";
+import { getProductRelatedResources } from "@/config/related-resources";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -118,6 +120,14 @@ export default async function ProductPage({ params }: Props) {
             </div>
           </section>
         )}
+        <RelatedResources
+          resources={getProductRelatedResources(
+            product.slug,
+            category ?? "sugar",
+            relatedProducts[0]?.slug,
+            relatedProducts[0]?.title,
+          )}
+        />
       </article>
     </>
   );

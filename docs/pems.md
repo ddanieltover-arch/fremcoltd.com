@@ -22,7 +22,7 @@
 | Design system | Brand blue scale + admin semantic tokens (`brand-primary`, etc.) in `globals.css`; Inter; Lucide |
 | Primary risks | Prod needs Postgres `DATABASE_URL` + `AUTH_SECRET`; hybrid catalog; GA4 ID must be set in Vercel env |
 | Open decisions | JSON→Prisma public catalog cutover; remaining guide content from 90-day calendar; Upstash if abuse |
-| Recent changes | Full SEO + GEO: canonical metadata, JSON-LD, /faq /glossary /guides, llms.txt, GA4 events, seo-check CI |
+| Recent changes | SEO + GEO foundation; keyword-rich related resources (5–7 internal + 2 outbound) on all public pages |
 | Next priorities | Set `NEXT_PUBLIC_GA_MEASUREMENT_ID`; re-submit sitemap in GSC; execute link-building CRM |
 
 ---
@@ -130,7 +130,7 @@
 
 | Date | Decision | Reasoning | Alternatives considered | Impact |
 |---|---|---|---|---|
-| 2026-08-17 | Canonical host `www.fremcoltd.com` | Vercel apex 301 → www; align GSC preferred domain | Apex-only canonical | `site-content.json`, metadata, schema URLs unified |
+| 2026-08-17 | Related resources: 5–7 keyword internal links + 2 outbound per public page | Pass homepage/category keywords as anchors; cite FAO/ICUMSA/ICC | Footer-only links; nofollow all outbound | `RelatedResources` on all public templates |
 | 2026-08-17 | Content route `/guides/[slug]` not `/blog` | B2B site — guides not blog expectations | MDX blog; CMS pages | 3 seed guides; 90-day calendar for more |
 | 2026-08-17 | Product schema: Offer price-on-request, no AggregateRating | B2B quote model; no fake reviews | E-commerce Product schema with price | Honest rich results eligibility |
 | 2026-08-17 | GA4 via `NEXT_PUBLIC_GA_MEASUREMENT_ID` + client events | Form success is client-side; GSC/GA4 access confirmed | GTM container | `generate_lead`, `sign_up`, outbound click tracking |
