@@ -16,7 +16,10 @@
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
     "db:seed": "tsx prisma/seed.ts",
-    "db:setup": "prisma db push && tsx prisma/seed.ts"
+    "db:setup": "prisma db push && tsx prisma/seed.ts",
+    "seo:audit": "node ../scripts/seo/seo-audit.js",
+    "seo:crawl": "node ../scripts/seo/crawl-inventory.mjs",
+    "seo:validate-schema": "node ../scripts/seo/validate-schema.js"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

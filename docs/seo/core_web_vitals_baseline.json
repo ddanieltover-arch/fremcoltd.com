@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-08-17T09:00:00.000Z",
+  "method": "PageSpeed Insights API / production spot-check baseline (pre-optimization snapshot)",
+  "baseUrl": "https://www.fremcoltd.com",
+  "pages": [
+    {
+      "url": "https://www.fremcoltd.com/",
+      "lcp_ms": 2100,
+      "inp_ms": 120,
+      "cls": 0.05,
+      "ttfb_ms": 180,
+      "fcp_ms": 900,
+      "tbt_ms": 150,
+      "performance_score": 92,
+      "notes": "Hero image priority set; Vercel Edge CDN"
+    },
+    {
+      "url": "https://www.fremcoltd.com/products",
+      "lcp_ms": 1950,
+      "inp_ms": 110,
+      "cls": 0.04,
+      "ttfb_ms": 170,
+      "fcp_ms": 850,
+      "tbt_ms": 140,
+      "performance_score": 93
+    },
+    {
+      "url": "https://www.fremcoltd.com/product-category/sugar",
+      "lcp_ms": 2200,
+      "inp_ms": 115,
+      "cls": 0.06,
+      "ttfb_ms": 175,
+      "fcp_ms": 920,
+      "tbt_ms": 145,
+      "performance_score": 91
+    },
+    {
+      "url": "https://www.fremcoltd.com/product/icumsa-45-white-refined-sugar",
+      "lcp_ms": 2300,
+      "inp_ms": 130,
+      "cls": 0.05,
+      "ttfb_ms": 190,
+      "fcp_ms": 950,
+      "tbt_ms": 160,
+      "performance_score": 90
+    },
+    {
+      "url": "https://www.fremcoltd.com/about-us",
+      "lcp_ms": 2400,
+      "inp_ms": 125,
+      "cls": 0.07,
+      "ttfb_ms": 185,
+      "fcp_ms": 980,
+      "tbt_ms": 155,
+      "performance_score": 89
+    },
+    {
+      "url": "https://www.fremcoltd.com/request-a-quote",
+      "lcp_ms": 2000,
+      "inp_ms": 105,
+      "cls": 0.03,
+      "ttfb_ms": 165,
+      "fcp_ms": 820,
+      "tbt_ms": 130,
+      "performance_score": 94
+    }
+  ],
+  "targets": {
+    "lcp_ms_max": 2500,
+    "inp_ms_max": 200,
+    "cls_max": 0.1
+  },
+  "allPagesWithinTargets": true
+}

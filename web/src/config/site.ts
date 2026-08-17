@@ -17,6 +17,9 @@ export const navItems = [
     label: "Info",
     href: "#",
     children: [
+      { label: "Export Guides", href: "/guides" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Glossary", href: "/glossary" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Sustainability", href: "/sustainability" },
       { label: "Quality Control", href: "/quality-control" },
@@ -44,37 +47,57 @@ export const categorySortOrder = [
 
 export const categoryMeta: Record<
   string,
-  { title: string; description: string; image: string }
+  { title: string; description: string; image: string; answerCapsule: string; overview: string }
 > = {
   sugar: {
     title: "Sugar",
     description:
       "Premium ICUMSA refined cane sugar, beet sugar, and specialty sweeteners for global wholesale buyers.",
     image: categoryImages.sugar,
+    answerCapsule:
+      "FREEM ENTERPRISE exports Thai sugar in ICUMSA 45, 100, 150, VHP, and brown cane grades for food processing, beverages, and industrial use — with COA documentation and FOB/CIF shipping from Thailand.",
+    overview:
+      "Thailand is a leading global sugar producer. Our sugar export range covers premium white refined ICUMSA 45 for food and beverage manufacturers, medium-grade refined sugars for industrial applications, and specialty brown and VHP grades for refineries and niche markets. Every shipment includes Certificate of Analysis and full export documentation.",
   },
   rice: {
     title: "Rice",
     description:
       "Thai jasmine, parboiled, basmati, and specialty rice varieties for international markets.",
     image: categoryImages.rice,
+    answerCapsule:
+      "FREEM ENTERPRISE supplies Thai Hom Mali (jasmine), parboiled, white, and broken rice to wholesale buyers worldwide — with moisture, broken percentage, and milling grade specifications confirmed in every COA.",
+    overview:
+      "Thai rice is prized for fragrance, texture, and consistent quality. We export Hom Mali jasmine rice for premium retail and HORECA channels, parboiled rice for Africa and Middle East markets, and white and broken rice for food service and industrial processing. Packaging options include 5–50 kg bags and bulk container loads.",
   },
   fertilizers: {
     title: "Fertilizers",
     description:
       "NPK, organic, and water-soluble fertilizers to support agricultural productivity worldwide.",
     image: categoryImages.fertilizers,
+    answerCapsule:
+      "FREEM ENTERPRISE exports NPK compound fertilizers, urea, DAP, MAP, organic fertilizers, and water-soluble blends from Thailand — supporting global agricultural productivity with bulk FCL shipments.",
+    overview:
+      "Our fertilizer catalog spans nitrogen, phosphorus, and potassium compounds for broad-acre farming, horticulture, and specialty crops. Products include granular NPK blends, straight fertilizers (urea, DAP, MAP), organic options, and water-soluble formulations for fertigation systems.",
   },
   "edible-cooking-oil": {
     title: "Edible Cooking Oil",
     description:
       "High-quality edible cooking oils for food processing, retail, and export supply chains.",
     image: categoryImages["edible-cooking-oil"],
+    answerCapsule:
+      "FREEM ENTERPRISE exports high-quality edible cooking oils from Thailand for food processing, retail packing, and industrial food manufacturing — available in bulk and bottled formats for international wholesale buyers.",
+    overview:
+      "Our edible cooking oil range supports food manufacturers, retail packers, and HORECA distributors. Oils are processed to retain quality and meet export standards with COA per batch. Flexible packaging from bulk flexitanks and drums to retail-ready formats.",
   },
   "energy-drinks": {
     title: "Energy Drinks",
     description:
       "Export-ready energy drink products for wholesale buyers, distributors, and retail supply chains worldwide.",
     image: categoryImages["energy-drinks"],
+    answerCapsule:
+      "FREEM ENTERPRISE supplies export-ready energy drink products for wholesale distributors and retail supply chains — sourced from certified production facilities in Thailand with full export documentation.",
+    overview:
+      "Our energy drink export line serves distributors and retail chains seeking reliable supply from Thailand. Products are export-documented and available for container-load orders with flexible branding and packaging discussions for qualified buyers.",
   },
 };
 

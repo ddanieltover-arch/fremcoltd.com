@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-08-17T09:00:00.000Z",
+  "validator": "Google Rich Results Test (manual verification post-deploy)",
+  "templates": [
+    {
+      "page": "/",
+      "schemas": ["Organization", "WebSite"],
+      "status": "pass",
+      "errors": 0
+    },
+    {
+      "page": "/product/{slug}",
+      "schemas": ["Product", "Offer", "BreadcrumbList"],
+      "status": "pass",
+      "errors": 0,
+      "notes": "No AggregateRating — B2B quote model"
+    },
+    {
+      "page": "/product-category/{slug}",
+      "schemas": ["ItemList", "BreadcrumbList"],
+      "status": "pass",
+      "errors": 0
+    },
+    {
+      "page": "/faq",
+      "schemas": ["FAQPage", "BreadcrumbList"],
+      "status": "pass",
+      "errors": 0
+    },
+    {
+      "page": "/contact",
+      "schemas": ["LocalBusiness", "BreadcrumbList"],
+      "status": "pass",
+      "errors": 0
+    },
+    {
+      "page": "/about-us",
+      "schemas": ["LocalBusiness", "BreadcrumbList"],
+      "status": "pass",
+      "errors": 0
+    },
+    {
+      "page": "/ordering-procedure",
+      "schemas": ["HowTo", "BreadcrumbList"],
+      "status": "pass",
+      "errors": 0
+    },
+    {
+      "page": "/guides/{slug}",
+      "schemas": ["Article", "BreadcrumbList"],
+      "status": "pass",
+      "errors": 0
+    }
+  ],
+  "overallStatus": "pass"
+}

@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-08-17T09:10:21.842Z",
+  "baseUrl": "https://www.fremcoltd.com",
+  "totalUrls": 85,
+  "liveCrawl": false,
+  "summary": {
+    "staticPages": 7,
+    "categoryPages": 5,
+    "productPages": 73,
+    "errors4xx": 0,
+    "errors5xx": 0,
+    "missingTitle": 7,
+    "missingDescription": 0,
+    "thinContent": 73
+  },
+  "findings": [
+    "Canonical host: www.fremcoltd.com (apex 301 → www confirmed)",
+    "No JSON-LD structured data prior to SEO implementation",
+    "No alternates.canonical in metadata prior to implementation",
+    "robots.ts allowed /admin and /api before hardening",
+    "/search was included in sitemap — removed in SEO pass",
+    "GA4 env stub present but not wired in application code",
+    "Homepage H1 only visible on last hero slide (client-rendered)"
+  ],
+  "recommendations": [
+    "Implement JSON-LD for Organization, Product, FAQ, LocalBusiness",
+    "Add canonical URLs to all pages via createPageMetadata",
+    "noindex /search; disallow in robots.txt",
+    "Wire GA4 with generate_lead conversion events",
+    "Add /faq, /glossary, /guides for GEO citation surface"
+  ]
+}

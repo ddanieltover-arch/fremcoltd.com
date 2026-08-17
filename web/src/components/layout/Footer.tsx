@@ -43,6 +43,9 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/products" className="hover:text-white">Products</Link></li>
             <li><Link href="/about-us" className="hover:text-white">About Us</Link></li>
+            <li><Link href="/faq" className="hover:text-white">FAQ</Link></li>
+            <li><Link href="/glossary" className="hover:text-white">Glossary</Link></li>
+            <li><Link href="/guides" className="hover:text-white">Export Guides</Link></li>
             <li><Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
             <li><Link href="/quality-control" className="hover:text-white">Quality Control</Link></li>
             <li><Link href="/ordering-procedure" className="hover:text-white">Ordering Procedure</Link></li>
@@ -59,17 +62,17 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 shrink-0" />
-              <a href={`tel:${site.phone.replace(/\s/g, "")}`}>{site.phone}</a>
+              <a href={`tel:${site.phone.replace(/\s/g, "")}`} data-track-outbound="phone">{site.phone}</a>
             </li>
             <li className="flex items-center gap-2">
               <MessageCircle className="h-4 w-4 shrink-0" />
-              <a href={`https://wa.me/${site.whatsapp.replace(/\D/g, "")}`} target="_blank" rel="noreferrer">
+              <a href={`https://wa.me/${site.whatsapp.replace(/\D/g, "")}`} data-track-outbound="whatsapp" target="_blank" rel="noreferrer">
                 WhatsApp
               </a>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4 shrink-0" />
-              <a href={`mailto:${site.email}`}>{site.email}</a>
+              <a href={`mailto:${site.email}`} data-track-outbound="email">{site.email}</a>
             </li>
           </ul>
         </div>

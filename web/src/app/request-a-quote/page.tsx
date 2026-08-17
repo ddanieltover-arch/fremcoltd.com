@@ -6,6 +6,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Request a Quote | FREEM ENTERPRISE CO., LTD",
   description: "Request a wholesale quote for sugar, rice, fertilizers, or edible cooking oil.",
+  path: "/request-a-quote",
 });
 
 export default function QuotePage() {

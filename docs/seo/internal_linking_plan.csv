@@ -1,0 +1,25 @@
+From Page,To Page,Anchor Text,Priority
+/,/product-category/sugar,Thai sugar exporter,High
+/,/product-category/rice,Thailand rice wholesale,High
+/,/product-category/fertilizers,NPK fertilizer supplier,High
+/,/request-a-quote,Request a wholesale quote,High
+/products,/product-category/sugar,Sugar products,High
+/products,/product-category/rice,Rice products,High
+/product-category/sugar,/product/icumsa-45-white-refined-sugar,ICUMSA 45 white refined sugar,High
+/product-category/sugar,/request-a-quote,Request sugar export quote,High
+/product-category/rice,/request-a-quote,Request rice export quote,High
+/product-category/fertilizers,/request-a-quote,Request fertilizer quote,High
+/product/icumsa-45-white-refined-sugar,/product-category/sugar,All sugar products,Medium
+/product/icumsa-45-white-refined-sugar,/quality-control,Quality control standards,Medium
+/product/icumsa-45-white-refined-sugar,/ordering-procedure,Ordering procedure,Medium
+/ordering-procedure,/quality-control,Quality verification process,Medium
+/ordering-procedure,/request-a-quote,Start your order,High
+/quality-control,/sustainability,Sustainable sourcing,Medium
+/faq,/glossary,Export trade terms glossary,Medium
+/faq,/guides,Export guides,Medium
+/glossary,/guides/how-to-import-thai-sugar,How to import Thai sugar,Medium
+/guides,/faq,Wholesale buyer FAQ,Medium
+/about-us,/quality-control,Our quality standards,Medium
+/about-us,/contact,Contact export team,High
+/guides/how-to-import-thai-sugar,/product-category/sugar,Browse sugar catalog,High
+/guides/fob-vs-cif-agricultural-commodities,/ordering-procedure,Export ordering steps,Medium

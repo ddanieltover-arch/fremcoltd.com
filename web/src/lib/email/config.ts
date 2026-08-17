@@ -4,7 +4,7 @@ export const emailConfig = {
     process.env.EMAIL_FROM?.trim() ||
     "FREEM Enterprise <onboarding@resend.dev>",
   siteName: process.env.NEXT_PUBLIC_SITE_NAME?.trim() || "FREEM ENTERPRISE CO., LTD",
-  siteUrl: process.env.NEXT_PUBLIC_URL?.trim() || "https://fremcoltd.com",
+  siteUrl: process.env.NEXT_PUBLIC_URL?.trim() || "https://www.fremcoltd.com",
   tagline: "Sweetening the World with Thai Excellence",
 } as const;
 

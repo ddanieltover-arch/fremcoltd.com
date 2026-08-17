@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-08-17T09:00:00.000Z",
+  "domain": "www.fremcoltd.com",
+  "preferredDomain": "www",
+  "apexRedirect": "301 → https://www.fremcoltd.com/",
+  "gscAccess": "confirmed by client",
+  "ga4Access": "confirmed by client",
+  "sitemapUrl": "https://www.fremcoltd.com/sitemap.xml",
+  "sitemapSubmitted": "pending re-submit after SEO deployment",
+  "indexedPagesEstimate": 85,
+  "robotsTxtValid": true,
+  "httpsEnforced": true,
+  "hstsEnabled": true,
+  "preOptimizationGaps": [
+    "No JSON-LD structured data",
+    "No canonical alternates on pages",
+    "GA4 not wired in application",
+    "/search indexable and in sitemap",
+    "No FAQ/glossary/guides GEO pages",
+    "Homepage H1 only on client hero slide"
+  ],
+  "postOptimizationStatus": "implemented in codebase — verify in GSC after deploy"
+}

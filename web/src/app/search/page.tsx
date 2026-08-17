@@ -8,6 +8,8 @@ import type { SearchCategory } from "@/lib/search";
 export const metadata: Metadata = createPageMetadata({
   title: "Search Products | FREEM ENTERPRISE CO., LTD",
   description: "Search sugar, rice, fertilizers, and edible cooking oil products from FREEM ENTERPRISE CO., LTD.",
+  path: "/search",
+  noindex: true,
 });
 
 const validCategories = new Set<SearchCategory>([

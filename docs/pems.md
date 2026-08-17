@@ -3,8 +3,8 @@
 *Fill one record per project. Save as `docs/pems.md` in the project repo. Read before starting work; update after major decisions.*
 
 **PEMS Version:** 1.0  
-**Last Updated:** 2026-08-09  
-**Updated By:** Senior Full Stack Engineer (Pulse B2B Admin CMS v1)
+**Last Updated:** 2026-08-17  
+**Updated By:** Senior Full Stack Engineer (SEO + GEO implementation)
 
 ---
 
@@ -16,14 +16,14 @@
 |---|---|
 | Project | fremcoltd.com — FREEM ENTERPRISE CO., LTD |
 | Current version | 0.1.0 (`web/package.json`) |
-| Current sprint / phase | Launch / Maintain — marketing site live; admin CMS v1 added |
-| Architecture (one line) | Next.js App Router under `web/`; static JSON public catalog; Prisma for admin queues + Auth.js `/admin`; Resend lead email |
-| Tech stack (one line) | Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 · Prisma · Auth.js · Zod · RHF · Resend · Vercel |
+| Current sprint / phase | Launch / Maintain — SEO + GEO foundation deployed |
+| Architecture (one line) | Next.js App Router; static JSON catalog; JSON-LD + GA4; Prisma admin + Auth.js; Resend lead email |
+| Tech stack (one line) | Next.js 16 · React 19 · TypeScript · Tailwind CSS v4 · Prisma · Auth.js · Zod · RHF · Resend · GA4 · Vercel |
 | Design system | Brand blue scale + admin semantic tokens (`brand-primary`, etc.) in `globals.css`; Inter; Lucide |
-| Primary risks | Prod needs Postgres `DATABASE_URL` + `AUTH_SECRET`; hybrid catalog (JSON public / Prisma admin); in-memory rate limits |
-| Open decisions | JSON→Prisma public catalog cutover; Dealers/Distributors/Certifications/Pages later; analytics; Upstash |
-| Recent changes | Pulse B2B Admin CMS v1 (Quotes, Inquiries, Products); seed admin `sales@fremcoltd.com` |
-| Next priorities | Wire Vercel Postgres + AUTH_SECRET; confirm email-health; optional catalog cutover |
+| Primary risks | Prod needs Postgres `DATABASE_URL` + `AUTH_SECRET`; hybrid catalog; GA4 ID must be set in Vercel env |
+| Open decisions | JSON→Prisma public catalog cutover; remaining guide content from 90-day calendar; Upstash if abuse |
+| Recent changes | Full SEO + GEO: canonical metadata, JSON-LD, /faq /glossary /guides, llms.txt, GA4 events, seo-check CI |
+| Next priorities | Set `NEXT_PUBLIC_GA_MEASUREMENT_ID`; re-submit sitemap in GSC; execute link-building CRM |
 
 ---
 
@@ -130,6 +130,11 @@
 
 | Date | Decision | Reasoning | Alternatives considered | Impact |
 |---|---|---|---|---|
+| 2026-08-17 | Canonical host `www.fremcoltd.com` | Vercel apex 301 → www; align GSC preferred domain | Apex-only canonical | `site-content.json`, metadata, schema URLs unified |
+| 2026-08-17 | Content route `/guides/[slug]` not `/blog` | B2B site — guides not blog expectations | MDX blog; CMS pages | 3 seed guides; 90-day calendar for more |
+| 2026-08-17 | Product schema: Offer price-on-request, no AggregateRating | B2B quote model; no fake reviews | E-commerce Product schema with price | Honest rich results eligibility |
+| 2026-08-17 | GA4 via `NEXT_PUBLIC_GA_MEASUREMENT_ID` + client events | Form success is client-side; GSC/GA4 access confirmed | GTM container | `generate_lead`, `sign_up`, outbound click tracking |
+| 2026-08-17 | SEO CI: static audit + Lighthouse on PR/main | Prevent metadata/schema regressions | Manual audits only | `.github/workflows/seo-check.yml` |
 | 2026-08-09 | Pulse B2B Admin CMS v1: Quotes, Inquiries, Products; Dealers/Distributors/Certs/Pages later | Sales queue + optional CMS without full ERP | Full kit modules; no admin | `/admin` + Prisma + Auth.js; kit config in `pulse-b2b-admin-cms/project-config.md` |
 | 2026-08-09 | Hybrid catalog: public JSON, admin Prisma products | Faster admin ship; avoid storefront cutover risk | Prisma as public source of truth | Two catalogs until cutover decision |
 | 2026-08-09 | Persist contact/quote to DB then email; DB failure does not block Resend | Never lose sales lead email | Fail form if DB down | `console.error` on persist miss |

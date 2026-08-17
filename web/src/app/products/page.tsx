@@ -9,6 +9,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Products | FREEM ENTERPRISE CO., LTD",
   description: "Browse sugar, rice, fertilizers, and edible cooking oil products for wholesale export.",
+  path: "/products",
 });
 
 export default function ProductsPage() {

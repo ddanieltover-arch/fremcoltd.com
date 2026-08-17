@@ -1,0 +1,101 @@
+name: SEO Validation
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+defaults:
+  run:
+    working-directory: web
+
+jobs:
+  seo-static:
+    name: SEO Static Checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: SEO audit script
+        run: node ../scripts/seo/seo-audit.js
+        working-directory: web
+
+      - name: Schema validation script
+        run: node ../scripts/seo/validate-schema.js
+        working-directory: web
+
+      - name: Generate crawl inventory
+        run: node ../scripts/seo/crawl-inventory.mjs
+        working-directory: web
+
+  lighthouse:
+    name: Lighthouse CI
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: fremco_ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d fremco_ci"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/fremco_ci
+      DIRECT_URL: postgresql://postgres:postgres@localhost:5432/fremco_ci
+      AUTH_SECRET: ci-auth-secret-not-for-production
+      NEXT_PUBLIC_URL: https://www.fremcoltd.com
+      NEXT_PUBLIC_SITE_NAME: FREEM ENTERPRISE CO., LTD
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - run: npm ci
+
+      - run: npx prisma db push --skip-generate
+
+      - run: npm run build
+
+      - name: Start server
+        run: npm run start &
+        env:
+          PORT: 3000
+
+      - name: Wait for server
+        run: npx wait-on http://127.0.0.1:3000 --timeout 60000
+
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: ./web/.lighthouserc.json
+          uploadArtifacts: true
+
+  sitemap-ping:
+    name: Sitemap Ping
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    steps:
+      - name: Ping Google sitemap
+        run: curl -fsS "https://www.google.com/ping?sitemap=https://www.fremcoltd.com/sitemap.xml" || true
+
+      - name: Ping Bing sitemap
+        run: curl -fsS "https://www.bing.com/ping?sitemap=https://www.fremcoltd.com/sitemap.xml" || true

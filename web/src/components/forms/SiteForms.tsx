@@ -5,6 +5,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { submitContactForm, submitQuoteForm, subscribeNewsletter } from "@/actions/forms";
+import { trackLead } from "@/components/analytics/GoogleAnalytics";
 import { HoneypotField } from "@/components/forms/FormSecurity";
 import {
   contactSchema,
@@ -68,6 +69,7 @@ export function ContactForm() {
         setIsSubmitting(false);
         if ("success" in result) {
           setStatus("success");
+          trackLead("contact");
           form.reset({ website: "", formStartedAt });
           return;
         }
@@ -134,6 +136,7 @@ export function QuoteForm() {
         setIsSubmitting(false);
         if ("success" in result) {
           setStatus("success");
+          trackLead("quote");
           form.reset({ website: "", productCategory: "sugar", formStartedAt });
           return;
         }
@@ -215,6 +218,7 @@ export function NewsletterForm({ className }: { className?: string }) {
         setIsSubmitting(false);
         if ("success" in result) {
           setStatus("success");
+          trackLead("newsletter");
           form.reset({ website: "", formStartedAt });
           return;
         }

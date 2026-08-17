@@ -13,9 +13,10 @@ import { getCategories, getFeaturedProducts, getSite, getTestimonials } from "@/
 import { createPageMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createPageMetadata({
-  title: "FREEM ENTERPRISE CO., LTD | Sugar, Rice & Fertilizers Exporter",
+  title: "Thai Agricultural Commodities Exporter | Sugar, Rice & Fertilizers",
   description:
     "Premium sugar, rice, fertilizers, and edible cooking oil from Thailand. FREEM ENTERPRISE CO., LTD — your trusted global agricultural commodities supplier.",
+  path: "/",
 });
 
 export default function HomePage() {
@@ -26,6 +27,13 @@ export default function HomePage() {
 
   return (
     <>
+      <section className="sr-only">
+        <h1>Thai Agricultural Commodities Exporter — Sugar, Rice, Fertilizers & Cooking Oil</h1>
+        <p>
+          {site.name} supplies premium sugar, rice, fertilizers, and edible cooking oil from Thailand to global wholesale
+          buyers, distributors, and procurement teams.
+        </p>
+      </section>
       <HeroSlider />
       <StatsSection />
       <TrustSection />
@@ -33,6 +41,14 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-7xl px-4 py-16">
         <Reveal>
+          <div id="answer" aria-label="Quick Answer" className="mb-10 rounded-2xl border border-brand-100 bg-brand-50/60 p-6">
+            <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">Quick Answer</p>
+            <p className="mt-2 leading-relaxed text-slate-700">
+              <strong>FREEM ENTERPRISE CO., LTD</strong> is a Thailand-based agricultural commodity exporter supplying sugar
+              (ICUMSA grades), rice, NPK fertilizers, edible cooking oil, and energy drinks to wholesale buyers worldwide —
+              with FOB/CIF shipping, COA documentation, and container-load export quantities.
+            </p>
+          </div>
           <div className="mb-10 flex items-end justify-between gap-4">
             <div>
               <p className="text-sm font-semibold uppercase tracking-wider text-brand-600">Catalog</p>
