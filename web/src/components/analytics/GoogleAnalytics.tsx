@@ -2,7 +2,11 @@
 
 import Script from "next/script";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID?.trim() || undefined;
+/** Google Ads conversion / remarketing tag */
+const ADS_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_ID?.trim() || "AW-17534449250";
+
+const PRIMARY_ID = GA_ID || ADS_ID;
 
 declare global {
   interface Window {
@@ -12,17 +16,25 @@ declare global {
 }
 
 export function GoogleAnalytics() {
-  if (!GA_ID) return null;
+  if (!PRIMARY_ID) return null;
+
+  const configs = [GA_ID, ADS_ID].filter(Boolean) as string[];
 
   return (
     <>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${PRIMARY_ID}`} strategy="afterInteractive" />
+      <Script id="google-tag" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${GA_ID}', { send_page_view: true });
+          ${configs
+            .map((id) =>
+              id.startsWith("AW-")
+                ? `gtag('config', '${id}');`
+                : `gtag('config', '${id}', { send_page_view: true });`,
+            )
+            .join("\n          ")}
         `}
       </Script>
     </>
@@ -30,7 +42,7 @@ export function GoogleAnalytics() {
 }
 
 export function trackEvent(eventName: string, params?: Record<string, string | number | boolean>) {
-  if (typeof window === "undefined" || !window.gtag || !GA_ID) return;
+  if (typeof window === "undefined" || !window.gtag || !PRIMARY_ID) return;
   window.gtag("event", eventName, params);
 }
 

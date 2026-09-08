@@ -6,14 +6,22 @@
 Set in Vercel production (and local `.env`):
 ```
 NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+NEXT_PUBLIC_GOOGLE_ADS_ID=AW-17534449250
 ```
 
 ### Implementation
 - Component: `web/src/components/analytics/GoogleAnalytics.tsx`
 - Loaded via `next/script` with `strategy="afterInteractive"`
 - Included in root layout
+- Single gtag loader configs both GA4 (if set) and Google Ads `AW-17534449250`
 
-### Conversion Events
+## Google Ads
+
+Base tag `AW-17534449250` is installed site-wide via the same gtag component.
+Override with `NEXT_PUBLIC_GOOGLE_ADS_ID` if the Ads account changes.
+Add conversion-specific `gtag('event', 'conversion', …)` snippets when Google Ads provides them for quote/contact goals.
+
+## Conversion Events (GA4)
 
 | Event | Trigger | Parameters |
 |-------|---------|------------|
