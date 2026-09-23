@@ -81,7 +81,24 @@ export default async function GuidePage({ params }: Props) {
         {guide.sections.map((section) => (
           <section key={section.heading} className="mt-10">
             <h2 className="text-xl font-bold text-brand-900">{section.heading}</h2>
-            <p className="mt-3 leading-relaxed text-slate-600">{section.body}</p>
+            <p className="mt-3 leading-relaxed text-slate-600">
+              {section.body}
+              {slug === "fob-vs-cif-agricultural-commodities" &&
+              section.heading.startsWith("When should wholesale buyers choose FOB") ? (
+                <>
+                  {" "}
+                  A Thailand-based forwarder can then arrange{" "}
+                  <a
+                    href="https://thaisploginc.com/ocean-freight"
+                    className="font-semibold text-brand-700 hover:text-brand-900"
+                    rel="noopener noreferrer"
+                  >
+                    ocean freight FCL and LCL from Thailand
+                  </a>
+                  .
+                </>
+              ) : null}
+            </p>
             {section.bullets && (
               <ul className="mt-4 space-y-2">
                 {section.bullets.map((item) => (
